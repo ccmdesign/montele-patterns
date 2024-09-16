@@ -1,0 +1,27 @@
+@import '0-global/reset.css';      /* Resets the browser configs */
+@import '0-global/scale.css';      /* Scale and Size Variable System */
+@import '0-global/colors.css';     /* Color Variables */
+@import '0-global/color-utils-bg.css';     /* Color Variables */
+@import '0-global/color-utils-color.css';     /* Color Variables */
+@import '0-global/color-utils-border.css';     /* Color Variables */
+@import '0-global/variables.css';  /* Project Variables */
+@import '0-global/utils.css';      /* Utility Classes */
+@import '0-global/elements.css';   /* Low-specificity, global styles applied to html elements */
+
+/* Layouts from https://every-layout.dev/layouts */ 
+@import-glob "1-layouts/*.css";    
+
+/* Components */
+@import-glob '2-components/*.css';
+
+/* Modules */
+@import-glob '3-modules/*.css';
+
+/* Sections */
+@import-glob '4-sections/*.css';
+
+/* Views */
+@import-glob '5-views/*.css';
+
+/* General purpuse stylesheet for improved dev experience */
+@import 'dev.css';

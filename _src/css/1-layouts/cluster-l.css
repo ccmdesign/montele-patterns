@@ -1,0 +1,19 @@
+/* 
+Cluster
+https://every-layout.dev/layouts/cluster/
+
+<ul class="cluster-l">
+  <li><!-- child --></li>
+  <li><!-- child --></li>
+  <li><!-- etc --></li>
+</ul> */
+  
+
+.cluster-l {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
+}
+  

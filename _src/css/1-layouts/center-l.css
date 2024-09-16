@@ -1,0 +1,14 @@
+/* 
+Center-l
+https://every-layout.dev/layouts/center/
+
+<div class="center-l">
+  <!-- centered content -->
+</div> 
+*/
+
+.center-l {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+}

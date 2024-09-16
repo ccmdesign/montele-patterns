@@ -1,0 +1,211 @@
+[
+  {
+    "id": "12385",
+    "name": "BURGER KING - DRIVE AVENIDA DO ESTADO",
+    "address": {
+      "street": "Avenida do Estado Dalmo Vieira, S/N.",
+      "lot": "LOTE 40/41/42",
+      "neighborhood": "Estados",
+      "city": "Balneário Camboriú",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "4253",
+    "name": "BANCO ITAU - AG. 1293",
+    "address": {
+      "street": "SAO PAULO, 2700.",
+      "neighborhood": "ITOUPAVA",
+      "city": "Blumenau",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "12573",
+    "name": "BURGER KING - DRIVE ITAJAI",
+    "address": {
+      "street": "Avenida Vereador Abrahão João Francisco, 2000.",
+      "neighborhood": "Dom Bosco",
+      "city": "Itajaí",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "15627",
+    "name": "BANCO ITAU - AG 6570",
+    "address": {
+      "street": "Avenida Getúlio Vargas, 320.",
+      "neighborhood": "Centro",
+      "city": "Timbó",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "7679",
+    "name": "BANCO ITAU - AG. 4730",
+    "address": {
+      "street": "RUA CRISÓGONO VIEIRA DA CRUZ, 465.",
+      "neighborhood": "LAGOA DA CONCEIÇÃO",
+      "city": "Florianópolis",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "12547",
+    "name": "BURGER KING - DRIVE CRICIUMA",
+    "address": {
+      "street": "Rua Artur Pescador, 165.",
+      "neighborhood": "Santa Bárbara",
+      "city": "Criciúma",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "7411",
+    "name": "MC DONALDS - MCDFLC",
+    "address": {
+      "street": "Rua Trajano, 114.",
+      "neighborhood": "Centro",
+      "city": "Florianópolis",
+      "state": "SC"
+    },
+    "status": {
+      "code": "Elevador",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "15693",
+    "name": "BANCO ITAU - AG 6407 - NAVEGANTES SC",
+    "address": {
+      "street": "Praça Nossa Senhora. Dos Navegantes, 35.",
+      "neighborhood": "Centro",
+      "city": "Navegantes",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "14882",
+    "name": "BANCO ITAU - AG 0490 - PERSONNALITE B CAMBORIU",
+    "address": {
+      "street": "Avenida Brasil, 1230.",
+      "neighborhood": "Centro",
+      "city": "Balneário Camboriú",
+      "state": "SC"
+    },
+    "status": {
+      "code": "Elevador",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "7678",
+    "name": "BANCO ITAU - AG. 0289",
+    "address": {
+      "street": "RUA TENENTE SILVEIRA, 340.",
+      "neighborhood": "CENTRO",
+      "city": "Florianópolis",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "12264",
+    "name": "BURGER KING - AVENIDA BRASIL",
+    "address": {
+      "street": "Av. Brasil, 1765.",
+      "neighborhood": "Centro",
+      "city": "Balneário Camboriú",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "12384",
+    "name": "BURGER KING - DRIVE SAO JOSE",
+    "address": {
+      "street": "Av. Presidente Kennedy, 446.",
+      "neighborhood": "Campinas",
+      "city": "São José",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  },
+  {
+    "id": "6465",
+    "name": "BANCO ITAU - AG. 6448",
+    "address": {
+      "street": "Av Centenario, 3773.",
+      "neighborhood": "CENTRO",
+      "city": "Criciúma",
+      "state": "SC"
+    },
+    "status": {
+      "code": "PL-200",
+      "activation": "Ativado",
+      "condition": "Normal",
+      "operation": "Funcionando"
+    }
+  }
+]

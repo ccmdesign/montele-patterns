@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "start": "concurrently 'npm run serve' 'npm run css -- --watch'",
+    "serve": "npx eleventy --serve",
+    "css": "npx postcss _src/css/styles.css -o dist/css/styles.css"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "concurrently": "^6.2.1",
+    "cssnano": "^7.0.5",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-import-ext-glob": "^2.0.1",
+    "postcss-js": "^4.0.0",
+    "postcss-preset-env": "^10.0.2",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "@csstools/postcss-relative-color-syntax": "^3.0.2",
+    "postcss": "^8.4.41",
+    "prettier": "^2.3.2"
+  }
+}
