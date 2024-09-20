@@ -1,0 +1,19 @@
+---
+layout: ds/base.njk
+title: Montele DS
+css: /css/ds.css
+---
+<div class="ds-layout">
+  <nav class="sidebar | stack-l | padding:m background-color:base-tint-05">
+    <h3>{{ title }}</h3>
+    {% for i in collections.all %}
+      <a href="{{i.url}}">{{i.data.title}}</a>
+    {% endfor %}
+  </nav>
+  <div class="main | padding:m">
+    {{ content | safe }}
+  </div>
+</div>
+
+
+

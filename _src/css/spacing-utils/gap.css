@@ -1,0 +1,25 @@
+/* Gap */
+.gap\:3xs { gap: var(--space-3xs); }
+.gap\:2xs { gap: var(--space-2xs); }
+.gap\:xs  { gap: var(--space-xs);  }
+.gap\:s   { gap: var(--space-s);   }
+.gap\:m   { gap: var(--space-m);   }
+.gap\:l   { gap: var(--space-l);   }
+.gap\:xl  { gap: var(--space-xl);  }
+.gap\:2xl { gap: var(--space-2xl); }
+.gap\:3xl { gap: var(--space-3xl); }
+
+/* Gap Pairs */
+.gap\:3xs-2xs { gap: var(--space-3xs-2xs); }
+.gap\:2xs-xs  { gap: var(--space-2xs-xs);  }
+.gap\:xs-s    { gap: var(--space-xs-s);    }
+.gap\:s-m     { gap: var(--space-s-m);     }
+.gap\:m-l     { gap: var(--space-m-l);     }
+.gap\:l-xl    { gap: var(--space-l-xl);    }
+.gap\:xl-2xl  { gap: var(--space-xl-2xl);  }
+.gap\:2xl-3xl { gap: var(--space-2xl-3xl); }
+.gap\:s-l     { gap: var(--space-s-l);     }
+.gap\:m-xl    { gap: var(--space-m-xl);    }
+.gap\:l-2xl   { gap: var(--space-l-2xl);   }
+.gap\:s-xl    { gap: var(--space-s-xl);    }
+.gap\:m-2xl   { gap: var(--space-m-2xl);   }
