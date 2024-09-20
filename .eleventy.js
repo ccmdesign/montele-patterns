@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("./_src/**/*.njk");
 
   // Copy the ds.css file to the output directory
+  eleventyConfig.addPassthroughCopy("./_src/assets/**/*.*");
   eleventyConfig.addPassthroughCopy("./_src/css/ds.css");
 
   return {

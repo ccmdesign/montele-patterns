@@ -1,0 +1,29 @@
+/* These are styles that I didn't decide where to put them yet */
+
+.montele-logo {
+  width: 64px;
+  height: auto;
+  padding: var(--space-s);
+}
+
+.hamburger-menu__trigger {
+  width: 64px;
+  font-size: 1.75rem;
+  padding: var(--space-s);
+}
+
+
+
+
+/* 
+This feels like it should go with the buttons, 
+but the aria-selected is a bit specific of the fixed-bar module 
+*/
+
+.button.icon {
+  font-size: 1.75rem;
+  padding: var(--space-s);
+}
+
+.button.icon { opacity: .5; }
+.button.icon[aria-selected="true"] { opacity: 1; }

@@ -59,12 +59,12 @@
 
 .button {
   /* Required Values */
-  --button-hsl:               var(--button-color);
-  --button-text-hsl:          var(--button-hsl);
-  --button-color:             hsla(var(--button-hsl), 1);
+  --button-hsl:               var(--base-hsl);
+  --button-text-hsl:          var(--base-hsl);
+  --button-color:             hsla(var(--white-hsl), 1);
   --button-text-color:        hsla(var(--button-text-hsl), 1);
-  --button-padding-block:     var(--base-padding-block);
-  --button-padding-inline:    var(--base-padding-inline);
+  --button-padding-block:     var(--space-s-m);
+  --button-padding-inline:    var(--space-s-m);
 
   /* Optional Values */
   --button-border-radius: var(--base-border-radius, 0);    /* Fallback to 0 */
@@ -219,7 +219,6 @@
 .button[icon-after] {
   display: inline-flex;
   align-items: center;
-  
 }
 
 .button[data-icon-before]:before,

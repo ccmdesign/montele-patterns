@@ -3,4 +3,27 @@ layout: ds/base.njk
 title: Prototype
 ---
 
-<h1>Prototype</h1>
+<main class="app-layout">
+  <header class="app-layout__header | fixed-bar">
+    <div>
+      <img class="montele-logo" src="../../assets/montele.svg" alt="">
+    </div>
+    <div class="fixed-bar__stretch">
+      <a class="page-title" href="#">PL-12800</a>
+    </div>
+    <div>
+      <button class="hamburger-menu__trigger | button icon" unstyled>menu</button>
+    </div>
+  </header>
+
+  <div class="app-layout__main">
+
+  </div>
+
+  <div class="app-layout__footer | fixed-bar">
+    <button class="button icon" role="tab" aria-selected="true" aria-controls="XXtabpanel-id" id="XXtab-id" data-active unstyled>home</button>
+    <button class="button icon" role="tab" aria-selected="false" aria-controls="XXtabpanel-id" id="XXtab-id" unstyled>construction</button>
+    <button class="button icon" role="tab" aria-selected="false" aria-controls="XXtabpanel-id" id="XXtab-id" unstyled>stacks</button>
+    <button class="button icon" role="tab" aria-selected="false" aria-controls="XXtabpanel-id" id="XXtab-id" unstyled>chat</button>
+  </div>
+</main>
