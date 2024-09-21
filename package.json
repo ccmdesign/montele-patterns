@@ -2,9 +2,9 @@
   "scripts": {
     "prebuild": "node copy-docs.js",
 
-    "watch-docs": "nodemon --watch _src/_includes/**/*-doc.html --exec \"npm run prebuild\"",
+    "watch-src": "nodemon --watch _src --exec \"npm run prebuild && npm run css && npm run serve\"",
 
-    "serve": "npm run prebuild && npx eleventy --serve",
+    "serve": "npx eleventy --serve",
 
     "build:eleventy": "npx eleventy",
 
@@ -14,7 +14,7 @@
 
     "build": "npm run prebuild && concurrently \"npm run build:eleventy\" \"npm run build:css\"",
 
-    "start": "concurrently \"npm run serve\" \"npm run css -- --watch\" \"npm run watch-docs\""
+    "start": "concurrently \"npm run watch-src\""
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
