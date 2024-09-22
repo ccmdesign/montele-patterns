@@ -20,3 +20,17 @@ module.exports = function(eleventyConfig) {
     templateFormats: ["html", "njk", "md"],
   };
 };
+
+// Isso pode facilitar o build
+// https://www.npmjs.com/package/eleventy-postcss-extension
+
+// Isso pode ser legal pro DS
+// https://www.npmjs.com/package/eleventy-plugin-code-demo
+// https://www.npmjs.com/package/eleventy-plugin-code-style-hooks
+
+// Isso pode ajudar com o contexto que vem o Django
+// https://www.11ty.dev/docs/data-custom/
+// https://www.npmjs.com/package/@aaashur/eleventy-plugin-add-remote-data
+
+// Será?
+// https://www.npmjs.com/package/eleventy-plugin-purgecss

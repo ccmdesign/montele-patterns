@@ -1,21 +1,14 @@
 {
   "scripts": {
-    "prebuild": "node copy-docs.js",
-
-    "watch-src": "nodemon --watch _src --exec \"npm run prebuild && npm run css && npm run serve\"",
-
-    "serve": "npx eleventy --serve",
-
-    "build:eleventy": "npx eleventy",
-
-    "build:css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
-
-    "css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
-
-    "build": "npm run prebuild && concurrently \"npm run build:eleventy\" \"npm run build:css\"",
-
-    "start": "concurrently \"npm run watch-src\""
-  },
+      "prebuild": "node copy-docs.js",
+      "watch-docs": "nodemon --watch _src/_includes/**/*-doc.html --exec \"npm run prebuild\"",
+      "serve": "npm run prebuild && npx eleventy --serve",
+      "build:eleventy": "npx eleventy",
+      "build:css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
+      "css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
+      "build": "npm run prebuild && concurrently \"npm run build:eleventy\" \"npm run build:css\"",
+      "start": "concurrently \"npm run serve\" \"npm run css -- --watch\" \"npm run watch-docs\""
+    },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "concurrently": "^6.2.1",
