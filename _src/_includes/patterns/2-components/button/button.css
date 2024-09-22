@@ -1,4 +1,15 @@
 .button {
+  /* Defining Variables */
+  --base-border-radius: 4px;
+  --button-font-family: var(--body-font);
+  --button-letter-spacing: 0.1px;
+  
+
+}
+
+
+
+.button {
   /* Structure */
   display: inline-block;
   zoom: 1;
@@ -61,10 +72,11 @@
   /* Required Values */
   --button-hsl:               var(--base-hsl);
   --button-text-hsl:          var(--base-hsl);
-  --button-color:             hsla(var(--white-hsl), 1);
+  
+  --button-color:             hsla(var(--button-hsl), 1);
   --button-text-color:        hsla(var(--button-text-hsl), 1);
-  --button-padding-block:     var(--space-s-m);
-  --button-padding-inline:    var(--space-s-m);
+  --button-padding-block:     var(--size--1);
+  --button-padding-inline:    var(--size-0);
 
   /* Optional Values */
   --button-border-radius: var(--base-border-radius, 0);    /* Fallback to 0 */
@@ -76,32 +88,27 @@
   --button-icon-color:    var(--button-text-color);
 }
 
-.button[data-color="base"],
-.button[color="base"] { 
+.button[data-color="base"] { 
   --button-hsl: var(--base-hsl); 
   --button-text-color: var(--base-color); 
 }
 
-.button[data-color="primary"],
-.button[color="primary"] { 
+.button[data-color="primary"] { 
   --button-hsl: var(--primary-hsl); 
   --button-text-color: var(--primary-color); 
 }
 
-.button[data-color="secondary"],
-.button[color="secondary"] { 
+.button[data-color="secondary"] { 
   --button-hsl: var(--secondary-hsl); 
   --button-text-color: var(--secondary-color); 
 }
 
-.button[data-color="accent"],
-.button[color="accent"] { 
+.button[data-color="accent"] { 
   --button-hsl: var(--accent-hsl);
   --button-text-color: var(--accent-color);
 }
 
-.button[data-color="white"], 
-.button[color="white"] { 
+.button[data-color="white"] { 
   --button-hsl: var(--white-hsl);
   --button-text-color: var(--white-color);
 }
@@ -125,27 +132,26 @@
 
 .button[data-size="s"],
 .button[size="s"] {
-  --button-padding-block: var(--s-2);
-  --button-padding-inline: var(--s0);
+  --button-padding-block: var(--size--2);
+  --button-padding-inline: var(--size--1);
   --button-font-size: 75%; 
 }
 
 .button[data-size="l"],
 .button[size="l"] {
-  --button-padding-block: var(--s0);
-  --button-padding-inline: var(--s2);
+  --button-padding-block: var(--size-2);
+  --button-padding-inline: var(--size-3);
   --button-font-size: 120%;
 }
 
 .button[data-size="xl"],
 .button[size="xl"] {
-  --button-padding-block: var(--s0);
-  --button-padding-inline: var(--s2);
+  --button-padding-block: var(--size-0);
+  --button-padding-inline: var(--size-2);
   --button-font-size: 150%;
 }
 
-.button[data-size="full-width"],
-.button[size="full-width"] { width: 100%; }
+.button[data-size="full-width"] { width: 100%; }
 
 .button {
   color: var(--button-text-color);
@@ -208,11 +214,6 @@
   border-color: transparent;
 }
 
-@media (max-width: 36em) {
-  .button[data-mobile="wide"],
-  .button[mobile="wide"] { width: 100%; }
-}
-
 .button[data-icon-before],
 .button[data-icon-after], 
 .button[icon-before],
@@ -221,16 +222,14 @@
   align-items: center;
 }
 
-.button[data-icon-before]:before,
-.button[data-icon-after]:after,  
-.button[icon-before]:before { content: attr(icon-before); }
-.button[icon-after]:after  { content: attr(icon-after); }
+.button[data-icon-before]:before { content: attr(icon-before); }
+.button[data-icon-after]:after { content: attr(icon-after); }
 
 .button[data-icon-before]:before,
 .button[data-icon-after]:after,
 .button[icon-before]:before,
 .button[icon-after]:after {
-  font-family: 'Material Symbols Outlined';
+  font-family: var(--icon-font);
   font-weight: normal;
   font-style: normal;
   font-size: 24px;  /* Preferred icon size */
@@ -257,10 +256,10 @@
 }
 
 .button[data-icon-before]:before,
-.button[icon-before]:before { margin-right: var(--s-1); }
+.button[icon-before]:before { margin-right: var(--size--1); }
 
 .button[data-icon-after]:after,
-.button[icon-after]:after   { margin-left: var(--s-1); }
+.button[icon-after]:after   { margin-left: var(--size--1); }
 
 .button[data-icon-before]:empty:before,
 .button[icon-before]:empty:before { margin-right: 0; }

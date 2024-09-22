@@ -10,6 +10,10 @@
 .app-layout__main   { grid-area: main; }
 .app-layout__footer { grid-area: footer; }
 
+.app-layout__main   { 
+  overflow-y: auto;
+ }
+
 /* Visuals */
 .app-layout__header,
 .app-layout__footer { background-color: var(--white-color); }
@@ -20,18 +24,3 @@
   border-top: 1px solid var(--base-tint-20); 
   padding-inline: var(--space-m);
 }
-
-
-
-/* Internal Elements - Unrelated */
-/* Talvez encontrar um lugar melhor para esses elementos */
-.page-title {
-  font-size: var(--size-3);
-  font-weight: 700;
-  color: var(--base-color);
-  padding: var(--space-m);
-  text-align: center;
-  width: 100%;
-  display: block;
-}
-

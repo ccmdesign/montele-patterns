@@ -1,0 +1,15 @@
+.subject-title {
+  font-size: 1.2rem;
+  color: var(--base-color);
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: .1px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.subject-title[data-icon]:before {
+  font-size: 1.5rem;
+  padding: var(--space-s);
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+
+.base-section {
+  padding-block: var(--space-xl);
+  padding-inline: var(--space-s);
+  border-bottom: 1px solid var(--base-tint-10);
+}
+
+.base-section__title {
+  padding-bottom: var(--space-m-l);
+  font-size: 1.5rem;
+  color: var(--base-color);
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: .1px;
+  text-align: center;
+}

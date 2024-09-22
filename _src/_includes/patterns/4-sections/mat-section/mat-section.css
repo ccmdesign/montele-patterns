@@ -1,0 +1,5 @@
+.mat-section {
+  padding-bottom: var(--space-2xl);
+  align-items: center;
+  justify-content: center;
+}

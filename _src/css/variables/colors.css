@@ -5,13 +5,13 @@
   --base-hsl: 210, 50%, 27%;
   --accent-hsl: 26, 100%, 50%;
   --primary-hsl: var(--base-hsl);
-  --secondary-hsl: var(--base-hsl);
+  --secondary-hsl: 209, 100%, 50%;
   
   /* Project Color values applied */
   --base-color: hsl(var(--base-hsl), 1);
   --accent-color: hsl(var(--accent-hsl), 1);
   --primary-color: hsl(var(--primary-hsl), 1);
-  --secondary-color: hsl(var(--primary-hsl), 1);
+  --secondary-color: hsl(var(--secondary-hsl), 1);
 
   /* System Color values in HSL color space */
   --white-hsl: 0, 0%, 100%;
@@ -19,7 +19,7 @@
   
   /* Status Color Values */
   --green-hsl: 120, 53%, 31%;
-  --yellow-hsl: 40, 100%, 50%;
+  --yellow-hsl: 56, 76%, 40%;
   --red-hsl: 0, 74%, 35%;
   
   /* Aliases */

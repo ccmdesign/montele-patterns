@@ -1,0 +1,8 @@
+.status-section {
+
+}
+
+.status-section__item {
+  /* text-align: center; */
+  --stack-space: var(--space-3xs); /* Essa variável está operando o --stack-space dentro do stack-l */
+}

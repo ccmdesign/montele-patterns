@@ -1,0 +1,12 @@
+.topic-header {
+  padding-top: var(--space-m-xl);
+}
+
+.topic-header__title {
+  font-size: 2.5rem;
+  color: var(--base-color);
+  font-weight: 200;
+  text-decoration: none;
+  letter-spacing: .1px;
+  text-align: center;
+}

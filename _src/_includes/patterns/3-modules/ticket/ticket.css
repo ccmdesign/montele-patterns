@@ -1,0 +1,13 @@
+.ticket {
+  --stack-space: var(--space-xl);
+}
+
+.ticket__timing {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: var(--space-xs);
+}
+
+.ticket__timing__item {
+  --stack-space: var(--space-3xs);
+}

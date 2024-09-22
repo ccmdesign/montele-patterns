@@ -7,18 +7,22 @@
 </div> */
 
 .stack-l {
+  --stack-space: var(--space-s);
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  
 }
 
-.stack-l > * {
-  margin-block: 0;
-} 
+.stack-l > * { margin-block: 0; } 
+.stack-l > * + * { margin-block-start: var(--stack-space); }
 
-.stack-l > * + * {
-  margin-block-start: var(--space, 1.5rem);
-}
-
+.stack-l[data-space="xs"]  { --stack-space: var(--space-xs); }
+.stack-l[data-space="s"]   { --stack-space: var(--space-s); }
+.stack-l[data-space="m"]   { --stack-space: var(--space-m); }
+.stack-l[data-space="l"]   { --stack-space: var(--space-l); }
+.stack-l[data-space="xl"]  { --stack-space: var(--space-xl); }
+.stack-l[data-space="2xl"] { --stack-space: var(--space-2xl); }
 
   

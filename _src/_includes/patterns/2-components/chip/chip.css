@@ -1,0 +1,86 @@
+.chip {
+  --chip-background-color: var(--base-tint-10);
+  --chip-text-color: var(--base-color);
+  --chip-border-color: transparent;
+}
+
+.chip {  
+  display: inline-block;
+  width: auto;
+  /* max-width: 40ch; */
+  border-radius: 50px;
+  padding: var(--space-3xs) var(--space-s);
+  border: 2px solid var(--chip-border-color);
+  background-color: var(--chip-background-color);
+  color: var(--chip-text-color);
+  font-weight: 500;
+  letter-spacing: .1px
+}
+
+.chip__select {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: var(--size-2);
+  color: var(--base-color);
+  cursor: pointer;
+}
+
+.chip[data-color="success"] {
+  --chip-background-color: var(--success-tint-10);
+  --chip-text-color: var(--success-color);
+}
+.chip[data-color="warning"] {
+  --chip-background-color: var(--warning-tint-10);
+  --chip-text-color: var(--warning-color);
+}
+.chip[data-color="fail"] {
+  --chip-background-color: var(--fail-tint-10);
+  --chip-text-color: var(--fail-color);
+}
+.chip[data-color="primary"] {
+  --chip-background-color: var(--primary-tint-10);
+  --chip-text-color: var(--primary-color);
+}
+.chip[data-color="secondary"] {
+  --chip-background-color: var(--secondary-tint-10);
+  --chip-text-color: var(--secondary-color);
+}
+
+.chip[data-color="accent"] {
+  --chip-background-color: var(--accent-tint-10);
+  --chip-text-color: var(--accent-color);
+}
+
+
+/* Primary / Internse */
+
+
+.chip[data-visual="primary"][data-color="success"] {
+  --chip-background-color: var(--success-color);
+  --chip-text-color: var(--white-color);
+}
+.chip[data-visual="primary"][data-color="warning"] {
+  --chip-background-color: var(--warning-color);
+  --chip-text-color: var(--white-color);
+}
+.chip[data-visual="primary"][data-color="fail"] {
+  --chip-background-color: var(--fail-color);
+  --chip-text-color: var(--white-color);
+}
+.chip[data-visual="primary"][data-color="primary"] {
+  --chip-background-color: var(--primary-color);
+  --chip-text-color: var(--white-color);
+}
+.chip[data-visual="primary"][data-color="secondary"] {
+  --chip-background-color: var(--secondary-color);
+  --chip-text-color: var(--white-color);
+}
+
+.chip[data-visual="primary"][data-color="accent"] {
+  --chip-background-color: var(--accent-color);
+  --chip-text-color: var(--white-color);
+}

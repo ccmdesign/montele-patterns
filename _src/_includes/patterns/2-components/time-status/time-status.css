@@ -1,0 +1,14 @@
+/* 
+Melhorar as cores -   O amarelo não está bom para isso
+*/
+
+.time-status {
+  --time-status-color: var(--base-color);
+  letter-spacing: .1px;
+  font-weight: 500;
+  color: var(--time-status-color);
+}
+
+.time-status[data-status="atrasado"] { color: var(--error-color); }
+.time-status[data-status="atencao"] { color: var(--warning-color); }
+.time-status[data-status="agendado"] { color: var(--secondary-color); }

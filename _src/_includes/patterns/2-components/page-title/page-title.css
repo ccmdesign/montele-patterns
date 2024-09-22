@@ -1,0 +1,11 @@
+.page-title {
+  /* Talvez inverter os elementos,
+  colocar o h1 dentro do link
+  para aumentar o hitbox  */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-indent: -.5rem;
+  text-decoration: none; 
+}

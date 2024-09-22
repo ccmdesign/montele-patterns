@@ -1,0 +1,8 @@
+.mensagem {
+  padding-block: var(--space-m-l);
+  border-bottom: 1px solid var(--base-tint-20);
+}
+
+.mensagem__author {
+  font-size: 1rem;;
+}

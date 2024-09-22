@@ -1,0 +1,25 @@
+.button.icon {
+  font-size: 1.75rem;
+  padding: var(--space-s);
+  border: 0;
+  border-radius: 0;
+}
+
+.button.icon[aria-selected="false"] { opacity: .5; }
+.button.icon[aria-selected="true"] { 
+  opacity: 1; 
+  background: var(--base-tint-10);
+}
+
+.mega-button.button {
+  background-color: var(--accent-color);
+  padding: var(--space-xl);
+  border-radius: 50%;
+  color: var(--white-color);
+  border: 16px solid var(--accent-tint-10);
+  box-shadow: 0 0 8px var(--accent-color-10);
+}
+
+.button.mega-button:before {
+  font-size: 8rem;
+}

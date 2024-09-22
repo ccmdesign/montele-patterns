@@ -1,0 +1,13 @@
+.grid-auto {
+  --grid-auto-min-width: 160px;
+  --grid-auto-gap: var(--space-m-l);
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-auto-min-width), 1fr));
+  gap: var(--grid-auto-gap);
+}
+
+/* poderíamos pensar em sistematizar isso para todos os grids */
+.grid-auto [data-columns="span-2"] { grid-column: span 2; }
