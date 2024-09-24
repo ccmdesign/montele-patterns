@@ -7,7 +7,7 @@
       "build:css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
       "css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
       "build": "npm run prebuild && concurrently \"npm run build:eleventy\" \"npm run build:css\"",
-      "start": "npm run serve && npm run css -- --watch && npm run watch-docs"
+      "start": "npm run css --watch && npm run serve && npm run watch-docs"
     },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
