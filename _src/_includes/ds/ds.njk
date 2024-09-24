@@ -5,11 +5,10 @@ css: /css/ds.css
 ---
 <div class="ds-layout">
   <nav class="sidebar | stack-l | padding:m background-color:base-tint-05">
-    <h3>{{ title }}</h3>
     {% set groupedItems = collections.all | groupByFolder('filePathStem') %}
     {% for folder, items in groupedItems %}
-      <h4>{{ folder }}</h4>
-      <ul>
+      <h5 class="text-transform:uppercase">{{ folder }}</h5>
+      <ul role="list">
       {% for item in items %}
         <li><a href="{{ item.filePathStem }}">{{ item.data.title }}</a></li>
       {% endfor %}
@@ -17,6 +16,7 @@ css: /css/ds.css
     {% endfor %}
   </nav>
   <div class="main | padding:m">
+    <h1>{{ title }}</h1>
     {{ content | safe }}
   </div>
 </div>
