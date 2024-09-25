@@ -1,1 +1,10 @@
 
+
+.full-page-menu {
+  background-color: var(--base-color);
+  margin: 0;
+  inset: 0;
+  color: var(--white-color);
+  width: auto;
+  height: auto;
+}
