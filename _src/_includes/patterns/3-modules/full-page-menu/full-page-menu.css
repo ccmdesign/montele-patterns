@@ -7,4 +7,31 @@
   color: var(--white-color);
   width: auto;
   height: auto;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  /* display: flex; */
+}
+
+.full-page-menu:popover {
+  display: flex;
+}
+
+:popover .full-page-menu__trigger {
+  display: block;
+  position: fixed;
+  top: var(--space-m);
+  right: var(--space-m);
+  z-index: 1;
+}
+
+.full-page-menu__item {
+  display: block;
+  
+  padding: var(--space-m);
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
 }

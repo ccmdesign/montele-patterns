@@ -1,12 +1,13 @@
-<button popovertarget="full-page-menu" class="hamburger-menu__trigger | button icon" unstyled>menu</button>
+<button popovertarget="full-page-menu" class="full-page-menu__trigger | button icon" unstyled>menu</button>
 
 <div popover id="full-page-menu" class="full-page-menu">
+  <button popovertarget="full-page-menu" class="full-page-menu__trigger | button icon" data-color="white" unstyled>close</button>
   <nav>
-    <ul>
-      <li><a href="/pages/prototype/">My Home</a></li>
-      <li><a href="/pages/prototype/equipamentos/">Equipamentos</a></li>
-      <li><a href="/pages/prototype/rotas/">Rotas</a></li>
-      <li><a href="/pages/prototype/equipamento/">Detalhe Equipamento</a></li>
+    <ul role="list" class="full-page-menu__menu">
+      <li><a class="full-page-menu__item"href="/pages/prototype/">My Home</a></li>
+      <li><a class="full-page-menu__item"href="/pages/prototype/equipamentos/">Equipamentos</a></li>
+      <li><a class="full-page-menu__item"href="/pages/prototype/rotas/">Rotas</a></li>
+      <li><a class="full-page-menu__item"href="/pages/prototype/equipamento/">Detalhe Equipamento</a></li>
     </ul>
   </nav>
 </div>

@@ -57,7 +57,7 @@
   border-color: transparent;
 }
 
-.button[data-fullWidth="true"] {
+.button[data-full-width="true"] {
   align-self: stretch;
   justify-self: stretch;
 }
