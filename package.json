@@ -1,16 +1,20 @@
 {
   "scripts": {
-      "prebuild": "node copy-docs.js",
-      "watch-docs": "nodemon --watch _src/_includes/**/*-doc.html --exec \"npm run prebuild\"",
-      "serve": "npm run prebuild && npx eleventy --serve",
-      "build:eleventy": "npx eleventy",
-      "build:css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
-      "css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
-      "build": "npm run prebuild && concurrently \"npm run build:eleventy\" \"npm run build:css\"",
-      "start": "npm run css --watch && npm run serve && npm run watch-docs"
-    },
+    "prebuild": "node copy-docs.js",
+    "watch-docs": "nodemon --watch _src/_includes/**/*-doc.html --exec \"npm run prebuild\"",
+    "serve": "npm run prebuild && npx eleventy --serve",
+    "build:eleventy": "npx eleventy",
+    "build:css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
+    "css": "npx postcss _src/css/styles.css -o dist/css/styles.css",
+    "build": "npm run prebuild && concurrently \"npm run build:eleventy\" \"npm run build:css\"",
+    "start": "npm-run-all --parallel dev:*",
+    "dev:eleventy": "eleventy --serve",
+    "dev:postcss": "postcss _src/css/style.css --dir dist/css/styles.css --watch",
+    "dev:browsersync": "browser-sync start --config bs-config.js"
+  },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@jgarber/eleventy-plugin-postcss": "^1.0.1",
     "concurrently": "^6.2.1",
     "cssnano": "^7.0.5",
     "postcss-cli": "^11.0.0",
@@ -22,9 +26,11 @@
   },
   "devDependencies": {
     "@csstools/postcss-relative-color-syntax": "^3.0.2",
+    "browser-sync": "^3.0.3",
     "fs-extra": "^11.2.0",
     "glob": "^11.0.0",
     "nodemon": "^3.1.6",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.41",
     "prettier": "^2.3.2"
   }

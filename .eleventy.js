@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./_src/assets/**/*.*");
   eleventyConfig.addPassthroughCopy("./_src/css/ds.css");
 
+  eleventyConfig.addPlugin(require('@jgarber/eleventy-plugin-postcss'));
+
   eleventyConfig.addFilter("groupByFolder", function(components) {
     return components.reduce((grouped, component) => {
       const parts = component.inputPath.split('/');
