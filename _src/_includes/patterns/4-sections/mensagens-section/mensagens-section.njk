@@ -1,0 +1,10 @@
+<section class="mensagens-section base-section">
+  <ul role="list">
+    {% for i in range(0, 8) %}
+    {% include "patterns/3-modules/mensagem/mensagem.njk" %}
+    {% endfor %}
+  </ul>
+  <div>
+    <button class="button" data-size="full-width" data-visual="secondary">Carregar mais mensagens</button>
+  </div>
+</section>

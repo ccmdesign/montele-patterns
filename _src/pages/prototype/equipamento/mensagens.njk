@@ -4,23 +4,11 @@ title: PL-12800
 tags:
   - prototype
 ---
+{% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
+{# <p>Vamos adicionar Filtros e um input para escrever</p> #}
 
-<section class="mensagens-section base-section">
-  <ul role="list">
-    {% for i in range(0, 8) %}
-    <li class="mensagem | stack-l">
+{% include "patterns/4-sections/mensagens-section/mensagens-section.njk" %}
 
-      <header class="mensagem__header | polarize-l">
-        <h4 class="mensagem__author">Claudio Mendonca</h4>
-        <span class="mensagem__time">21/09/2024 18:34</span>
-      </header>
-      
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos qui dicta voluptatum accusamus vitae quia provident eveniet necessitatibus ipsa officia incidunt praesentium nesciunt, cum saepe iure! Maiores, nulla sed in numquam odit sint perferendis animi, reprehenderit cupiditate odio tempore quod?</p>
-    </li>
-    {% endfor %}
-  </ul>
-  <div>
-    <button class="button" data-size="full-width" data-visual="secondary">Carregar mais mensagens</button>
-  </div>
-</section>
+
+
 
