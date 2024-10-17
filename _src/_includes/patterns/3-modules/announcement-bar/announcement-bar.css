@@ -1,0 +1,5 @@
+.announcement-bar {
+  background-color: var(--base-color-20);
+  padding: var(--space-m) var(--space-s);
+}
+
