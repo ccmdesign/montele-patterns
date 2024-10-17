@@ -1,0 +1,17 @@
+.summary-dash {
+  display: flex;
+  gap: var(--space-s); 
+}
+
+.summary-dash__item {
+  padding: var(--space-m);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.summary-dash__value {
+  font-size: 3rem;
+}
