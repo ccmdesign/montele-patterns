@@ -12,6 +12,7 @@
 
 .app-layout__main   { 
   overflow-y: auto;
+  position: relative;
  }
 
 /* Visuals */
