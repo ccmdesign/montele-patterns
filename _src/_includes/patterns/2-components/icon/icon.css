@@ -1,6 +1,9 @@
 [data-icon]:before,
+[data-icon-before]:before,
+[data-icon-after]:after,
 .icon {
   font-family: "Material Symbols Outlined";
+  font-size: 1.75rem;
   font-variation-settings:
   'FILL' 0,
   'wght' 200,
@@ -8,8 +11,10 @@
   'opsz' 24
 }
 
-.icon,
-[data-icon]:before {
-  content: attr(data-icon);
-  font-size: var(--size-1);
-}
+
+[data-icon]:before,
+.icon { content: attr(data-icon); }
+
+[data-icon-before]:before { content: attr(data-icon-before); }
+[data-icon-after]:after { content: attr(data-icon-after); }
+
