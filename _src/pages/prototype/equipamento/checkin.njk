@@ -13,7 +13,7 @@ tags:
     {% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
 
     <section class="base-section" data-size="s">
-      <details class="checkin-collapse | collapse | stack-l">
+      <details class="collapse | stack-l">
         <summary data-icon-after>Perigo</summary>
         <label class="checkbox-button button" data-size="m" data-full-width="true">Acúmulo de materiais / obstáculo<input type="checkbox"></label>
         <label class="checkbox-button button" data-size="m" data-full-width="true">Equipamento vandalizado<input type="checkbox"></label>
@@ -31,7 +31,7 @@ tags:
     </section>
     
     <section class="base-section" data-size="s">
-      <details class="checkin-collapse | collapse | stack-l">
+      <details class="collapse | stack-l">
         <summary data-icon-after>Desenergização</summary>
         <select name="" id="">
           <option value="">Disjuntor do cliente</option>
@@ -46,7 +46,7 @@ tags:
     </section>
 
     <section class="base-section" data-size="s">
-      <details class="checkin-collapse | collapse | stack-l">
+      <details class="collapse | stack-l">
         <summary data-icon-after>EPIs Necessários</summary>
           <label class="checkbox-button button" data-size="m" data-full-width="true">Botina de segurança<input type="checkbox"></label>
           <label class="checkbox-button button" data-size="m" data-full-width="true">Capacete com jugular<input type="checkbox"></label>
@@ -64,7 +64,7 @@ tags:
     </section>
 
     <section class="base-section" data-size="s">
-      <details class="checkin-collapse | collapse | stack-l">
+      <details class="collapse | stack-l">
         <summary data-icon-after>Procedimentos de Manutenção</summary>
 
         <label for="">Acesso ao topo do carro</label>
@@ -100,9 +100,23 @@ tags:
       </details>
     </section>
 
+    <section class="base-section" data-size="s">
+      <details class="collapse | stack-l">
+        <summary data-icon-after>Fotos</summary>
+        <div class="checkin-pictures">
+          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+        </div>
+        
+      </details>
+    </section>
+
     <section class="base-section | stack-l" data-size="s" data-border="false">
       <p>Relato</p>
       {% include "patterns/2-components/textarea-full/textarea-full.njk" %}
+      <button class="button" data-size="l" data-full-width="true" data-icon="mic">Gravar Audio</button>
       <button class="button" data-size="l" data-full-width="true">Atualizar</button>
       <button class="button" data-size="l" data-full-width="true">Check-out</button>
     </section>
