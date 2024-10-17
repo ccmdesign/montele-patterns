@@ -1,0 +1,20 @@
+.collapse summary::-webkit-details-marker { display: none; }
+.collapse summary:focus { outline: 0; }
+.collapse summary::after { content: "keyboard_arrow_down"; }
+.collapse[open] summary::after { content: "keyboard_arrow_up"; }
+
+.collapse summary {
+  list-style: none; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collapse {
+
+}
+
+
+.checkin-collapse {
+  
+}
