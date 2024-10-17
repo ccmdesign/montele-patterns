@@ -5,9 +5,14 @@ icon: offline_bolt
 tags:
   - prototype
 ---
-<header class="topic-header">
-  <h1 class="topic-header__title">Manutenção</h1>
-</header>
+{% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
+
+
+{# Vamos adicionar um announcement e um summary dos items da lista. Provavelmente 3 colunas/links pro scroll com numeros: X Corretivas, X Preventivas, etc.</p> #}
+{# Colocar uma corretiva, e 1 preventiva agendada, e 1 preventiva pendente </p> #}
+
+
+{% include "patterns/3-modules/summary-dash/summary-dash.njk" %}
 
 <section class="work-section base-section | center-l">
   <ul class="ticket-list stack-l" role="list" data-space="xl">
