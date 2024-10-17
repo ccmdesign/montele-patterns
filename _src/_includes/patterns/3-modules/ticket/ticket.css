@@ -1,5 +1,7 @@
 .ticket {
   --stack-space: var(--space-xl);
+  border-bottom: 1px solid var(--base-color-20);
+  padding-bottom: var(--stack-space);
 }
 
 .ticket__timing {
