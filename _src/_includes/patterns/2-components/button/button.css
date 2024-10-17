@@ -217,13 +217,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  /* this tweaks the line-height of buttons with icons the button height consistent with the other buttons  */
+  line-height: 0.686;
 }
 
-.button[data-icon][data-full-width="true"],
-.button[data-icon-before][data-full-width="true"],
-.button[data-icon-after][data-full-width="true"] {
-  gap: var(--size-1);
-}
+
 
 .button[data-icon-before]:before { content: attr(icon-before); }
 .button[data-icon-after]:after { content: attr(icon-after); }
@@ -236,7 +234,6 @@
   font-size: 24px;  /* Preferred icon size */
   font-size: calc(var(--button-font-size) * 1.5);
   display: inline-block;
-  line-height: 1;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;

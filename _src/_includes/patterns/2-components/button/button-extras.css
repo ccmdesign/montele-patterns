@@ -23,3 +23,9 @@
 .button.mega-button:before {
   font-size: 8rem;
 }
+
+.button[data-icon][data-full-width="true"],
+.button[data-icon-before][data-full-width="true"],
+.button[data-icon-after][data-full-width="true"] {
+  gap: var(--size-1);
+}
