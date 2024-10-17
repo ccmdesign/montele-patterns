@@ -5,6 +5,13 @@
   border-bottom: 1px solid var(--base-tint-10);
 }
 
+.base-section[data-size="s"] { padding-block: var(--space-s); }
+.base-section[data-size="m"] { padding-block: var(--space-m); }
+.base-section[data-size="l"] { padding-block: var(--space-l); }
+.base-section[data-size="xl"] { padding-block: var(--space-xl); } /* default */
+
+.base-section[data-border="false"] { border: 0; }
+
 .base-section__title {
   padding-bottom: var(--space-m-l);
   font-size: 1.5rem;
