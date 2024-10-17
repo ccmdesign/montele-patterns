@@ -1,0 +1,108 @@
+---
+layout: ds/prototype-detail.njk
+title: PL-12800
+icon: offline_bolt
+tags:
+  - prototype
+---
+{# 
+  Fiquei na dúvida de como implementar o fluxo do check-in.
+  Montei ele num HTML separado para conversarmos.
+#}
+
+    {% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
+
+    <section class="base-section" data-size="s">
+      <details class="checkin-collapse | collapse | stack-l">
+        <summary data-icon-after>Perigo</summary>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Acúmulo de materiais / obstáculo<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Equipamento vandalizado<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Falta de sinalização adequada<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Iluminação inadequada<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Intempéries<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Interferência de pessoas<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Obra no local<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Ruído excessivo<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Piso escorregadio<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Piso irregular<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Materiais inflamáveis<input type="checkbox"></label>
+        <label class="checkbox-button button" data-size="m" data-full-width="true">Excesso de poeira<input type="checkbox"></label>
+      </details>
+    </section>
+    
+    <section class="base-section" data-size="s">
+      <details class="checkin-collapse | collapse | stack-l">
+        <summary data-icon-after>Desenergização</summary>
+        <select name="" id="">
+          <option value="">Disjuntor do cliente</option>
+          <option value="">Disjuntor do quadro de comando</option>
+          <option value="">Não foi necessário o bloqueio</option>
+        </select>
+        <p>Localização disjuntor:</p>
+        <p>Arquivo:Não disponível</p>
+        <p>Tensão do quadro de comando:Extra baixa tensão</p>
+        <p>Acesso aos disjuntores:Pendente - Não identificado</p>
+      </details>
+    </section>
+
+    <section class="base-section" data-size="s">
+      <details class="checkin-collapse | collapse | stack-l">
+        <summary data-icon-after>EPIs Necessários</summary>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Botina de segurança<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Capacete com jugular<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Cinto seg. paraquedista<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Creme luvex<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Luvas de cobertura<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Luvas com resis. a corte<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Luvas de proteção nitrílica<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Luvas isolante<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Máscara<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Óculos de prot. incolor<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Protetor auricular<input type="checkbox"></label>
+          <label class="checkbox-button button" data-size="m" data-full-width="true">Trava queda com dois talabartes<input type="checkbox"></label>
+      </details>
+    </section>
+
+    <section class="base-section" data-size="s">
+      <details class="checkin-collapse | collapse | stack-l">
+        <summary data-icon-after>Procedimentos de Manutenção</summary>
+
+        <label for="">Acesso ao topo do carro</label>
+        <select name="" id="">
+          <option value="">-----</option>
+          <option value="">Sim</option>
+          <option value="">Não foi necessário</option>
+          <option value="">Não foi possível realizar</option>
+        </select>
+        <label for="">Acesso ao topo do poço</label>
+        <select name="" id="">
+          <option value="">-----</option>
+          <option value="">Sim</option>
+          <option value="">Não foi necessário</option>
+          <option value="">Não foi possível realizar</option>
+        </select>
+
+        <label for="">Acesso à casa de máquinas</label>
+        <select name="" id="">
+          <option value="">-----</option>
+          <option value="">Sim</option>
+          <option value="">Não foi necessário</option>
+          <option value="">Não foi possível realizar</option>
+        </select>
+
+        <label for="">Resgate de passageiros presos</label>
+        <select name="" id="">
+          <option value="">-----</option>
+          <option value="">Sim</option>
+          <option value="">Não foi necessário</option>
+          <option value="">Não foi possível realizar</option>
+        </select>
+      </details>
+    </section>
+
+    <section class="base-section | stack-l" data-size="s" data-border="false">
+      <p>Relato</p>
+      {% include "patterns/2-components/textarea-full/textarea-full.njk" %}
+      <button class="button" data-size="l" data-full-width="true">Atualizar</button>
+      <button class="button" data-size="l" data-full-width="true">Check-out</button>
+    </section>
