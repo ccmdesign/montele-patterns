@@ -9,7 +9,8 @@
 }
 
 .textarea-full:has(textarea:focus) {
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   background-color: var(--white-color);
   top: 0;
   left: var(--space-s);
