@@ -25,4 +25,6 @@ body {
 }
 
 
-
+.aux {
+  outline: 2px solid pink;
+}
