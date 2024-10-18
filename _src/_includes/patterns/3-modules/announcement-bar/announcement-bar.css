@@ -1,5 +1,91 @@
 .announcement-bar {
-  background-color: var(--base-color-20);
+  /* Structure */
+  display: flex;
+
+  /* Spacing */
   padding: var(--space-m) var(--space-s);
+  gap: var(--space-m);
+
+  /* Colors */
+  background-color: var(--base-color-10);
+  color: var(--base-color);
 }
 
+.announcement-bar[data-color="primary"] {
+  color: var(--primary-color);
+  background-color: var(--primary-color-10);
+}
+
+.announcement-bar[data-color="secondary"] {
+  color: var(--secondary-color);
+  background-color: var(--secondary-color-10);
+}
+
+.announcement-bar[data-color="accent"] {
+  color: var(--accent-color);
+  background-color: var(--accent-color-10);
+}
+
+.announcement-bar[data-color="base"] {
+  color: var(--base-color);
+  background-color: var(--base-color-10);
+}
+
+.announcement-bar[data-color="red"] {
+  color: var(--red-color);
+  background-color: var(--red-color-10);
+}
+
+.announcement-bar[data-color="yellow"] {
+  color: var(--yellow-color);
+  background-color: var(--yellow-color-10);
+}
+
+.announcement-bar[data-color="green"] {
+  color: var(--green-color);
+  background-color: var(--green-color-10);
+}
+
+/* status controls */
+.announcement-bar[data-status="success"] {
+  color: var(--success-color);
+  background-color: var(--success-color-10);
+
+  &:before { content: "check";}
+}
+
+.announcement-bar[data-status="fail"] {
+  color: var(--fail-color);
+  background-color: var(--fail-color-10);
+  &:before { content: "close";}
+}
+
+.announcement-bar[data-status="error"] {
+  color: var(--error-color);
+  background-color: var(--error-color-10);
+  &:before { content: "close";}
+}
+
+.announcement-bar[data-status="warning"] {
+  color: var(--warning-color);
+  background-color: var(--warning-color-10);
+  &:before { content: "warning";}
+}
+
+.announcement-bar[data-status="info"] {
+  color: var(--secondary-color);
+  background-color: var(--secondary-color-10);
+  &:before { content: "info";}
+}
+
+.announcement-bar[data-status="brand"] {
+  color: var(--brand-color);
+  background-color: var(--brand-color-10);
+  &:before { content: "info";}
+}
+
+.announcement-bar[data-status="monitoramento"] {
+  color: var(--monitoramento-color);
+  background-color: var(--monitoramento-color-10);
+  &:before { content: "offline_bolt";}
+}

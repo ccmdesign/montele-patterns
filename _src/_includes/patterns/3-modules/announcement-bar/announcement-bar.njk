@@ -1,4 +1,18 @@
-<div class="announcement-bar">
-  <span class="icon">warning</span>
+<!-- 
+  [data-icon] - Precisamos do attributo (boolean) para ativar o icone na barra de announcement. 
+  
+  [data-status] - Definem o status da barra de announcement.
+  As keywords são: success, fail, error, warning, info controlam as cores e os icones da barra de announcement. 
+
+  [data-color] - Definem um controle mais granular da barra de announcement. Aceitando todas as cores do design-system.
+  As keywords definem apenas as cores, mantendo os icones invisíveis. 
+  
+  [data-icon] - Define o icone da barra de announcement, aceitando qualquer icone do Material Symbols (https://fonts.google.com/icons).
+  
+  [data-status] sobrescreve [data-color] e [data-icon].
+-->
+
+<div class="announcement-bar" data-color="" data-status="monitoramento" data-icon="">
+  <!--<span class="icon">warning</span> -->
   <p>Check-in aberto por Claudio Mendonca em 16 de Outubro 2024</p>
 </div>
