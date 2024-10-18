@@ -1,9 +1,70 @@
 ---
 layout: ds/prototype-list.njk
-title: Rotas
+title: Detalhe da Rota
 icon:
 tags:
   - prototype
 ---
+{% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
 
-<h1>Rotas</h1>
+<section class="base-section">
+  <h2 class="aux">Equipamentos paralisados</h2>
+</section>
+
+{% include "patterns/4-sections/summary-section/summary-section.njk" %}
+
+  <details class="collapsible-section | base-section | collapse" open>
+    <summary data-icon-after >
+      <h2 class="mini-dash">Tickets 
+        <span class="mini-dash__numbers">
+          <span data-status="atrasado">1</span>
+          <span data-status="aberto">2</span>
+          <span data-status="agendado">3</span>
+        </span>
+      </h2>
+    </summary> 
+
+    <ul role="list">
+      <li>Corretivas abertas</li>
+      <li>Preventivas Atrasadas</li>
+      <li>Preventivas Agendadas - Hoje</li>
+    </ul>
+  </details>
+
+<details class="collapsible-section | base-section | collapse">
+  <summary data-icon-after>
+    <h2 class="mini-dash">Preventivas 
+      <span class="mini-dash__numbers">
+        <span data-status="agendado">1</span>
+        <span data-status="">3</span>
+      </span>
+    </h2>
+  </summary> 
+  
+  <ul role="list">
+    <li>Preventivas Agendadas - Amanha</li>
+    <li>Preventivas Pendentes</li>
+  </ul>
+</details>
+
+<details class="collapsible-section | base-section | collapse">
+    <summary data-icon-after>
+      <h2 class="mini-dash">Reparos pendentes 
+        <span class="mini-dash__numbers">
+          <span data-status="agendado">1</span>
+          <span>3</span>
+        </span>
+      </h2>
+    </summary> 
+    
+    <ul role="list">
+      <li>Peças no local</li>
+      <li>Todos</li>
+    </ul>
+  </details>
+
+<section class="base-section">
+  <a class="button" data-size="full-width">Lista de Equipamentos</a>
+</section>
+
+
