@@ -1,0 +1,40 @@
+.collapsible-section {
+  
+}
+
+.collapsible-section h2 {
+  
+}
+
+.mini-dash {
+  width: 100%;
+  display: flex;
+}
+
+.mini-dash__numbers {
+  margin-left: auto;
+  margin-right: var(--space-m);
+}
+
+.mini-dash__numbers > * {
+  padding: var(--space-3xs) var(--space-xs);
+  
+  /* Sets default color for  numbers */
+  color: var(--base-color);
+  background-color: var(--base-color-05);
+}
+
+/* Sets colors for status of mini-dash */
+.mini-dash__numbers > [data-status="atrasado"]  {
+  color: var(--white-color);
+  background-color: var(--red-color);
+}
+
+.mini-dash__numbers > [data-status="agendado"] {
+  background-color: var(--base-color-20);
+}
+
+.mini-dash__numbers > [data-status="aberto"] {
+  color: var(--white-color);
+  background-color: var(--base-color);
+}
