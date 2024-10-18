@@ -5,6 +5,7 @@
   border-bottom: 1px solid var(--base-tint-10);
 }
 
+.base-section[data-size="0"] { padding-block: 0; }
 .base-section[data-size="s"] { padding-block: var(--space-s); }
 .base-section[data-size="m"] { padding-block: var(--space-m); }
 .base-section[data-size="l"] { padding-block: var(--space-l); }
