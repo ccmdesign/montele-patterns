@@ -1,7 +1,10 @@
 .ticket {
-  --stack-space: var(--space-xl);
+  --stack-space: var(--space-m);
+}
+
+.ticket {
+  padding-block: var(--stack-space);
   border-bottom: 1px solid var(--base-color-20);
-  padding-bottom: var(--stack-space);
 }
 
 .ticket__timing {
@@ -12,4 +15,50 @@
 
 .ticket__timing__item {
   --stack-space: var(--space-3xs);
+}
+
+/* Ticket Status Modifiers */
+/* Color Control - Context Specific Visuals */
+/* Tickets: Status */
+.ticket[data-ticket-status="aberto"] [data-ticket-status] {
+  --chip-border-color: var(--secondary-color);
+  --chip-background-color: var(--white-color);
+  --chip-text-color: var(--secondary-color);
+}
+.ticket[data-ticket-status="atrasado"] [data-ticket-status] {
+  --chip-background-color: var(--red-color-10);
+  --chip-text-color: var(--red-color);
+}
+.ticket [data-ticket-motivo="funcionando"] [data-ticket-motivo] {
+  --chip-background-color: var(--secondary-color-10);
+}
+
+.ticket[data-ticket-motivo="paralisado"] [data-ticket-motivo] {
+  --chip-border-color: var(--red-color);
+  --chip-background-color: var(--white-color);
+  --chip-text-color: var(--red-color)
+}
+
+.ticket[data-ticket-motivo="passageiro-preso"] [data-ticket-motivo] {
+  --chip-background-color: var(--red-color);
+  --chip-text-color: var(--white-color)
+}
+
+.ticket[data-ticket-motivo="funcionamento-insatisfatorio"] [data-ticket-motivo] {
+  --chip-background-color: var(--yellow-color-10);
+  --chip-text-color: var(--yellow-color)
+}
+
+.ticket-status {
+  display: flex;
+  gap: var(--space-xs)
+}
+
+.ticket-status__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-status__label {
+  padding-inline: var(--space-s);
 }

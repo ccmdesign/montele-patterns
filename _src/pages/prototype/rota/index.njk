@@ -1,15 +1,16 @@
 ---
 layout: ds/prototype-list.njk
 title: Detalhe da Rota
+header_title: BH Centro
 icon:
 tags:
   - prototype
 ---
 {% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
 
-<section class="base-section">
-  <h2 class="aux">Equipamentos paralisados</h2>
-</section>
+{# <section class="base-section">
+  {% include "patterns/3-modules/ticket/ticket.njk" %}
+</section> #}
 
 {% include "patterns/4-sections/summary-section/summary-section.njk" %}
 
@@ -18,16 +19,19 @@ tags:
       <h2 class="mini-dash">Tickets 
         <span class="mini-dash__numbers">
           <span data-status="atrasado">1</span>
-          <span data-status="aberto">2</span>
-          <span data-status="agendado">3</span>
+          <span data-status="aberto">0</span>
+          <span data-status="agendado">0</span>
         </span>
       </h2>
     </summary> 
 
     <ul role="list">
-      <li>Corretivas abertas</li>
+      {# <li>Corretivas abertas</li>
       <li>Preventivas Atrasadas</li>
-      <li>Preventivas Agendadas - Hoje</li>
+      <li>Preventivas Agendadas - Hoje</li> #}
+
+      {% set ticket = tickets.passageiro_preso %}
+      {% include "patterns/3-modules/ticket/ticket.njk" %}   
     </ul>
   </details>
 
@@ -35,15 +39,20 @@ tags:
   <summary data-icon-after>
     <h2 class="mini-dash">Preventivas 
       <span class="mini-dash__numbers">
+        <span data-status="atrasada">1</span>
         <span data-status="agendado">1</span>
-        <span data-status="">3</span>
       </span>
     </h2>
   </summary> 
   
   <ul role="list">
-    <li>Preventivas Agendadas - Amanha</li>
-    <li>Preventivas Pendentes</li>
+    {# <li>Preventivas Agendadas - Amanha</li>
+    <li>Preventivas Pendentes</li> #}
+    {% set ticket = tickets.preventiva_atrasada %}
+    {% include "patterns/3-modules/ticket/ticket.njk" %}
+    
+    {% set ticket = tickets.preventiva_agendada %}
+    {% include "patterns/3-modules/ticket/ticket.njk" %}
   </ul>
 </details>
 
@@ -58,8 +67,10 @@ tags:
     </summary> 
     
     <ul role="list">
-      <li>Peças no local</li>
-      <li>Todos</li>
+      {# <li>Peças no local</li>
+      <li>Todos</li> #}
+      {% set ticket = tickets.normal %}
+      {% include "patterns/3-modules/ticket/ticket.njk" %}
     </ul>
   </details>
 

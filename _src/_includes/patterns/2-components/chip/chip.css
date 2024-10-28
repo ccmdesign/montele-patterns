@@ -1,13 +1,24 @@
+/* Variables */
 .chip {
   --chip-background-color: var(--base-tint-10);
   --chip-text-color: var(--base-color);
   --chip-border-color: transparent;
 }
 
+/* 
+  Simple rule that hides any .chip that has no text in it. 
+  The objective here is to reduce HTML complexity.
+*/
+.chip:empty { display: none; }
+
+/* Structure */
 .chip {  
   display: inline-block;
   width: auto;
-  /* max-width: 40ch; */
+}
+
+/* Visual */
+.chip {  
   border-radius: 50px;
   padding: var(--space-3xs) var(--space-s);
   border: 2px solid var(--chip-border-color);
@@ -17,6 +28,7 @@
   letter-spacing: .1px
 }
 
+/* Element variations */
 .chip__select {
   appearance: none;
   border: 0;
@@ -29,6 +41,10 @@
   cursor: pointer;
 }
 
+
+/* Component Level Controls */
+
+/* Color Control - Default Visual */
 .chip[data-color="success"] {
   --chip-background-color: var(--success-tint-10);
   --chip-text-color: var(--success-color);
@@ -55,10 +71,7 @@
   --chip-text-color: var(--accent-color);
 }
 
-
-/* Primary / Internse */
-
-
+/* /* Color Control - Primary Visual */
 .chip[data-visual="primary"][data-color="success"] {
   --chip-background-color: var(--success-color);
   --chip-text-color: var(--white-color);
@@ -79,8 +92,8 @@
   --chip-background-color: var(--secondary-color);
   --chip-text-color: var(--white-color);
 }
-
 .chip[data-visual="primary"][data-color="accent"] {
   --chip-background-color: var(--accent-color);
   --chip-text-color: var(--white-color);
 }
+

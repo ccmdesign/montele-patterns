@@ -5,7 +5,7 @@
   --base-hsl: 200, 95%, 14%;
   --accent-hsl: 32, 100%, 49%;
   --primary-hsl: 192, 70%, 43%;
-  --secondary-hsl: 199, 64%, 73%;
+  --secondary-hsl: 199, 70%, 67%;
   
   --brand-hsl: 148, 71%, 25%;
   --monitoramento-hsl: 32, 100%, 49%;
@@ -26,7 +26,7 @@
   
   /* Status Color Values */
   --green-hsl: 120, 53%, 31%;
-  --yellow-hsl: 43, 100%, 51%;
+  --yellow-hsl: 43, 100%, 40%;
   --red-hsl: 0, 74%, 35%;
   
   /* Aliases */

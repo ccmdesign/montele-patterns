@@ -1,0 +1,85 @@
+{
+  "normal": {
+    "type": "Chamado corretivo",
+    "number": "038",
+    "status": "Aberto", 
+    "motivo": "Paralisado", 
+    "prioridade": "Normal", 
+    "prazo": "10-20-2024-14:00",
+    "previsao": "10-20-2024-8:30",
+    "prazo_flag": "",
+    "description": "REVISÃO DO MOTOR - Foi constatado que o motor está apresentando ruído atípico, este será recolhido e trazido à fábrica para análise. @ernandes.souza gentileza programar reparo."
+  },
+  "passageiro_preso": {
+    "type": "Chamado corretivo",
+    "number": "039",
+    "status": "Aberto",
+    "motivo": "Passageiro preso", 
+    "prioridade": "Urgente",
+    "prazo": "10-20-2024-14:00",
+    "previsao": "10-20-2024-8:30",
+    "prazo_flag": "Atencao",
+    "description": "REVISÃO DO MOTOR - Foi constatado que o motor está apresentando ruído atípico, este será recolhido e trazido à fábrica para análise. @ernandes.souza gentileza programar reparo."
+  },
+  "atrasado": {
+    "type": "Chamado corretivo",
+    "number": "040",
+    "status": "Atrasado",
+    "motivo": "Funcionamento insatisfatório", 
+    "prioridade": "Normal", 
+    "prazo": "10-20-2024-14:00",
+    "previsao": "10-20-2024-8:30",
+    "prazo_flag": "Atrasado",
+    "description": "Foi constatado que o motor está apresentando ruído atípico, este será recolhido e trazido à fábrica para análise. @ernandes.souza gentileza programar reparo."
+  },
+  "aberto": {
+    "type": "Chamado corretivo",
+    "number": "041",
+    "status": "Aberto",
+    "motivo": "Funcionamento insatisfatório", 
+    "prioridade": "Normal", 
+    "prazo": "10-20-2024-14:00",
+    "previsao": "10-20-2024-8:30",
+    "prazo_flag": "",
+    "description": "Foi constatado que o motor está apresentando ruído atípico, este será recolhido e trazido à fábrica para análise. @ernandes.souza gentileza programar reparo."
+  },
+  "preventiva_agendada": {
+    "type": "Preventiva",
+    "number": "042",
+    "status": "Funcionando", 
+    "motivo": "Preventiva",
+    "prioridade": "Normal", 
+    "ultima_preventiva": "09-20-2024-14:00",
+    "ultima_corretiva": "03-12-2024-8:30",
+    "prazo": "10-20-2024-14:00",
+    "previsao": "10-22-2024-17:15",
+    "prazo_flag": "Agendado",
+    "description": "Foi constatado que o motor está apresentando ruído atípico, este será recolhido e trazido à fábrica para análise. @ernandes.souza gentileza programar reparo."
+  },
+  "preventiva_atrasada": {
+    "type": "Preventiva",
+    "number": "042",
+    "status": "Funcionando",
+    "motivo": "Preventiva", 
+    "prioridade": "Normal", 
+    "ultima_preventiva": "09-20-2024-14:00",
+    "ultima_corretiva": "03-12-2024-8:30",
+    "prazo": "10-20-2024-14:00",
+    "prazo_flag": "Atrasado",
+    "previsao": "10-22-2024-17:15",
+    "description": "Foi constatado que o motor está apresentando ruído atípico, este será recolhido e trazido à fábrica para análise. @ernandes.souza gentileza programar reparo."
+  },
+  "preventiva_pendente": {
+    "type": "Preventiva",
+    "number": "043",
+    "motivo": "Preventiva",
+    "status": "Funcionando", 
+    "prioridade": "Normal", 
+    "ultima_preventiva": "09-20-2024-14:00",
+    "ultima_corretiva": "03-12-2024-8:30",
+    "prazo": "10-31-2024-18:00",
+    "prazo_flag": "",
+    "previsao": "Não agendado",
+    "description": "Foi constatado que o motor está apresentando ruído atípico, este será recolhido e trazido à fábrica para análise. @ernandes.souza gentileza programar reparo."
+  }
+}

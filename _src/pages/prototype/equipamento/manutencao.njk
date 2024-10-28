@@ -1,6 +1,7 @@
 ---
 layout: ds/prototype-detail.njk
 title: Equipamento - Manutenção
+header_title: PL-12800
 icon: offline_bolt
 tags:
   - prototype
@@ -15,11 +16,37 @@ tags:
 {% include "patterns/3-modules/summary-dash/summary-dash.njk" %}
 
 <section class="work-section base-section | center-l">
-  <ul class="ticket-list stack-l" role="list" data-space="xl">
+  <ul class="ticket-list stack-l" role="list" data-space="m">
+    {# <h3 class="subject-title">Chamados Corretivos</h3> #}
     <li>
+      {% set ticket = tickets.normal %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
     </li>
     <li>
+      {% set ticket = tickets.passageiro_preso %}
+      {% include "patterns/3-modules/ticket/ticket.njk" %}
+    </li>
+    <li>
+      {% set ticket = tickets.atrasado %}
+      {% include "patterns/3-modules/ticket/ticket.njk" %}
+    </li>
+    <li>
+      {% set ticket = tickets.aberto %}
+      {% include "patterns/3-modules/ticket/ticket.njk" %}
+    </li>
+  </ul>
+  <ul class="ticket-list stack-l" role="list" data-space="xl">
+    <h2 class="list-title">Chamados Preventivos</h2>
+    <li>
+      {% set ticket = tickets.preventiva_agendada %}
+      {% include "patterns/3-modules/ticket/ticket.njk" %}
+    </li>
+    <li>
+      {% set ticket = tickets.preventiva_atrasada %}
+      {% include "patterns/3-modules/ticket/ticket.njk" %}
+    </li>
+    <li>
+      {% set ticket = tickets.preventiva_pendente %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
     </li>
   </ul>

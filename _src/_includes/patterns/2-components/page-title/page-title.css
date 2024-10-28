@@ -9,3 +9,10 @@
   text-indent: -.5rem;
   text-decoration: none; 
 }
+
+.list-title {
+  padding-top: var(--space-xl);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 200;
+}

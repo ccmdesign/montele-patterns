@@ -7,5 +7,15 @@ tags:
 ---
 
 <div>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque magni hic temporibus assumenda dolorem nihil sapiente nobis possimus asperiores consequatur repudiandae sed maxime est nulla itaque, aliquid, explicabo obcaecati?
+  <h2>Modifiers dos componentes</h2>
+  <p>Quando temos um modificador no componente, 
+  todos os componentes internos são controlados por esse modificador. </p>
+  <p>Usamos o padrão `.outer-class[data-modifier] .inner-class` para garantir a especificidade</p>
+
+  <pre>
+    Exemplo:
+    .section-class[data-modifier] .module-class[data-modifier] .component-class {}
+    .module-class[data-modifier] .component-class {}
+    .component-class[data-modifer] {}
+  </pre>
 </div>
