@@ -15,7 +15,7 @@
   top: 0;
   left: var(--space-s);
   right: var(--space-s);
-  bottom: calc(var(--space-s));
+  bottom: var(--space-s);
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: calc(var(--base-border-radius) * 2);
   padding: var(--space-xs);
