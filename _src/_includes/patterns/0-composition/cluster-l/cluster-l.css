@@ -16,4 +16,8 @@ https://every-layout.dev/layouts/cluster/
   justify-content: flex-start;
   align-items: center;
 }
+
+.cluster-l[data-justify="start"] { justify-content: flex-start; }
+.cluster-l[data-justify="center"] { justify-content: center; }
+.cluster-l[data-justify="end"] { justify-content: flex-end; }
   

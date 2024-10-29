@@ -6,12 +6,41 @@ icon: offline_bolt
 tags:
   - prototype
 ---
-  {% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
 
-  {% include "patterns/4-sections/header-info-section/header-info-section.njk" %}
+{% include "patterns/4-sections/header-info-section/header-info-section.njk" %}
 
-  {% include "patterns/4-sections/status-section/status-section.njk" %}
+<section class="base-section" data-z="8">
+  <form action="" class="form | stack-l">
+    <div class="field select">
+      <label for="select">Choose an option:</label>
+      <select id="select" name="select">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+    </div>
 
-  {% include "patterns/4-sections/checkin-section/checkin-section.njk" %}
+    <div class="field select">
+      <label for="select">Precisa de Peças</label>
+      <select id="select" name="select">
+        <option value="option1">OK</option>
+        <option value="option2">Precisa de peças</option>
+      </select>
+    </div>
+
+    <div class="field select">
+      <label for="select">Choose an option:</label>
+      <select id="select" name="select">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+    </div>
+  </form>
+</section>
+
+
+  {# {% include "patterns/4-sections/status-section/status-section.njk" %} #}
+
+  {# {% include "patterns/4-sections/checkin-section/checkin-section.njk" %} #}
+  
 
 

@@ -1,0 +1,103 @@
+---
+title: Sandbox
+layout: ds/prototype-detail.njk
+tags:
+  - pages
+---
+
+<form class="form stack-l center-l" data-space="m">
+  <div class="field select">
+    <label for="select">Choose an option:</label>
+    <select id="select" name="select">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="textarea">Your message:</label>
+    <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+  </div>
+
+  <div class="field">
+    <button class="button" data-size="l" type="submit">Submit</button>
+  </div>
+
+
+  <div class="field checkbox">
+    <label for="checkbox0" class="button" data-icon>
+      <input type="checkbox" id="checkbox0" name="checkbox-single" value="option1">
+      ON/OFF
+    </label>
+  </div>
+
+  <div class="field checkbox-group">
+    <legend>Checkboxes</legend>
+    <label for="checkbox1" class="button" data-icon>
+      <input type="checkbox" id="checkbox1" name="checkbox-group" value="option1">
+      Option 1
+    </label>
+    <label for="checkbox2" class="button" data-icon>
+      <input type="checkbox" id="checkbox2" name="checkbox-group" value="option2">
+      Option 2
+    </label>
+    <label for="checkbox3" class="button" data-icon>
+      <input type="checkbox" id="checkbox3" name="checkbox-group" value="option3">
+      Option 2
+    </label>
+    <label for="checkbox4" class="button" data-icon>
+      <input type="checkbox" id="checkbox4" name="checkbox-group" value="option4">
+      Option 2
+    </label>
+  </div>
+
+  
+  <div class="field radio-group">
+    <legend>Radio Buttons</legend>
+    <label for="radio1" class="button" data-icon>
+      <input type="radio" id="radio1" name="radio-group" value="option1">
+      Option 1
+    </label>
+    <label for="radio2" class="button" data-icon>
+      <input type="radio" id="radio2" name="radio-group" value="option2">
+      Option 2
+    </label>
+    <label for="radio3" class="button" data-icon>
+      <input type="radio" id="radio3" name="radio-group" value="option3">
+      Option 2
+    </label>
+    <label for="radio4" class="button" data-icon>
+      <input type="radio" id="radio4" name="radio-group" value="option4">
+      Option 2
+    </label>
+  </div>
+
+  <div class="field input" aria-required="true" >
+    <label for="text-input">Text Input label</label>
+    <input type="text" id="text-input" name="email-input" placeholder="Text input placeholder" required data-icon-before>
+  </div>
+  <div class="field input">
+    <label for="email-input">Email Input label</label>
+    <input type="email" id="email-input" name="email-input" placeholder="Email input placeholder">
+  </div>
+  <div class="field input">
+    <label for="password-input">Password Input label</label>
+    <input type="password" id="password-input" name="password-input" placeholder="Password input placeholder">
+  </div>
+  <div class="field input">
+    <label for="tel-input">Telephone Input label</label>
+    <input type="tel" id="tel-input" name="tel-input" placeholder="Telephone input placeholder">
+  </div>
+  <div class="field input">
+    <label for="url-input">URL Input label</label>
+    <input type="url" id="url-input" name="url-input" placeholder="URL input placeholder">
+  </div>
+  <div class="field input">
+    <label for="number-input">Number Input label</label>
+    <input type="number" id="number-input" name="number-input" placeholder="Number input placeholder">
+  </div>
+  <div class="field input">
+    <label for="search-input">Search Input label</label>
+    <input type="search" id="search-input" name="search-input" placeholder="Search input placeholder">
+  </div>
+</form>

@@ -1,8 +1,9 @@
 
 .base-section {
-  padding-block: var(--space-xl);
-  padding-inline: var(--space-s);
-  border-bottom: 1px solid var(--base-tint-10);
+  padding-block: var(--space-l);
+  padding-inline: var(--space-m);
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
 }
 
 .base-section[data-size="0"] { padding-block: 0; }
@@ -21,4 +22,21 @@
   text-decoration: none;
   letter-spacing: .1px;
   text-align: center;
+  
 }
+
+.base-section[data-z] { 
+  position: relative; 
+}
+
+.base-section[data-z="1"] { z-index: 1; }
+.base-section[data-z="2"] { z-index: 2; }
+.base-section[data-z="3"] { z-index: 3; }
+.base-section[data-z="4"] { z-index: 4; }
+.base-section[data-z="5"] { z-index: 5; }
+.base-section[data-z="6"] { z-index: 6; }
+.base-section[data-z="7"] { z-index: 7; }
+.base-section[data-z="8"] { z-index: 8; }
+.base-section[data-z="9"] { z-index: 9; }
+.base-section[data-z="10"] { z-index: 10; }
+

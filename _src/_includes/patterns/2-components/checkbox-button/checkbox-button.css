@@ -1,9 +1,11 @@
+/* obsolete */
+
 label.button:has(input[type="checkbox"]) input {
   display: none;
 }
   
   label.button:has(input[type="checkbox"]:checked) {
-    background-color: var(--base-color);
-    color: var(--white-color);
+    background-color: var(--base-color-30);
+    color: var(--base-color);
     
   }

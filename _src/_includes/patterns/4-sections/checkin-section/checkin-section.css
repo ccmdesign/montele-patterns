@@ -1,4 +1,7 @@
 .checkin-section {
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--white-color);
 }
 
 

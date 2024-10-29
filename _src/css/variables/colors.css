@@ -181,6 +181,63 @@
   --secondary-shade-10: color-mix(in srgb, var(--secondary-color) 10%, var(--black-color));
   --secondary-shade-05: color-mix(in srgb, var(--secondary-color) 05%, var(--black-color));
   
+  /* Black */
+  --black-color-95: hsl(var(--black-hsl), .95);
+  --black-color-90: hsl(var(--black-hsl), .90);
+  --black-color-80: hsl(var(--black-hsl), .80);
+  --black-color-70: hsl(var(--black-hsl), .70);
+  --black-color-30: hsl(var(--black-hsl), .30);
+  --black-color-20: hsl(var(--black-hsl), .20);
+  --black-color-10: hsl(var(--black-hsl), .10);
+  --black-color-05: hsl(var(--black-hsl), .05);
+
+  --black-tint-95: color-mix(in srgb, var(--black-color) 95%, var(--white-color));
+  --black-tint-90: color-mix(in srgb, var(--black-color) 90%, var(--white-color));
+  --black-tint-80: color-mix(in srgb, var(--black-color) 80%, var(--white-color));
+  --black-tint-70: color-mix(in srgb, var(--black-color) 70%, var(--white-color));
+  --black-tint-30: color-mix(in srgb, var(--black-color) 30%, var(--white-color));
+  --black-tint-20: color-mix(in srgb, var(--black-color) 20%, var(--white-color));
+  --black-tint-10: color-mix(in srgb, var(--black-color) 10%, var(--white-color));
+  --black-tint-05: color-mix(in srgb, var(--black-color) 05%, var(--white-color));
+  
+  --black-shade-95: color-mix(in srgb, var(--black-color) 95%, var(--white-color));
+  --black-shade-90: color-mix(in srgb, var(--black-color) 90%, var(--white-color));
+  --black-shade-80: color-mix(in srgb, var(--black-color) 80%, var(--white-color));
+  --black-shade-70: color-mix(in srgb, var(--black-color) 70%, var(--white-color));
+  --black-shade-30: color-mix(in srgb, var(--black-color) 30%, var(--white-color));
+  --black-shade-20: color-mix(in srgb, var(--black-color) 20%, var(--white-color));
+  --black-shade-10: color-mix(in srgb, var(--black-color) 10%, var(--white-color));
+  --black-shade-05: color-mix(in srgb, var(--black-color) 05%, var(--white-color));
+
+  /* White */
+  --white-color-95: hsl(var(--white-hsl), .95);
+  --white-color-90: hsl(var(--white-hsl), .90);
+  --white-color-80: hsl(var(--white-hsl), .80);
+  --white-color-70: hsl(var(--white-hsl), .70);
+  --white-color-30: hsl(var(--white-hsl), .30);
+  --white-color-20: hsl(var(--white-hsl), .20);
+  --white-color-10: hsl(var(--white-hsl), .10);
+  --white-color-05: hsl(var(--white-hsl), .05);
+
+  --white-tint-95: color-mix(in srgb, var(--white-color) 95%, var(--white-color));
+  --white-tint-90: color-mix(in srgb, var(--white-color) 90%, var(--white-color));
+  --white-tint-80: color-mix(in srgb, var(--white-color) 80%, var(--white-color));
+  --white-tint-70: color-mix(in srgb, var(--white-color) 70%, var(--white-color));
+  --white-tint-30: color-mix(in srgb, var(--white-color) 30%, var(--white-color));
+  --white-tint-20: color-mix(in srgb, var(--white-color) 20%, var(--white-color));
+  --white-tint-10: color-mix(in srgb, var(--white-color) 10%, var(--white-color));
+  --white-tint-05: color-mix(in srgb, var(--white-color) 05%, var(--white-color));
+  
+  --white-shade-95: color-mix(in srgb, var(--white-color) 95%, var(--black-color));
+  --white-shade-90: color-mix(in srgb, var(--white-color) 90%, var(--black-color));
+  --white-shade-80: color-mix(in srgb, var(--white-color) 80%, var(--black-color));
+  --white-shade-70: color-mix(in srgb, var(--white-color) 70%, var(--black-color));
+  --white-shade-30: color-mix(in srgb, var(--white-color) 30%, var(--black-color));
+  --white-shade-20: color-mix(in srgb, var(--white-color) 20%, var(--black-color));
+  --white-shade-10: color-mix(in srgb, var(--white-color) 10%, var(--black-color));
+  --white-shade-05: color-mix(in srgb, var(--white-color) 05%, var(--black-color));
+
+
   /* Green */
 
   --green-color-95: hsl(var(--green-hsl), .95);

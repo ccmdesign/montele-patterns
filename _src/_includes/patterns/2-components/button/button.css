@@ -1,11 +1,44 @@
 .button {
   /* Defining Variables */
-  --base-border-radius: 4px;
-  --button-font-family: var(--body-font);
-  --button-letter-spacing: 0.1px;
+  --base-border-radius: 0;
+  --_button-font-family: var(--body-font);
+  --_button-letter-spacing: 0.1px;
+}
+
+/* 
+  This section contains the css rules for the button system. 
+  Most of the visual configurations can be made through the variables. (Lines 13-21)
+  Many of these configurations have fallbacks values. 
+*/
+
+.button {
+  /* Required Values */
+  --_button-hsl:               var(--base-hsl);
+  --_button-text-hsl:          var(--base-hsl);
+  
+  --_button-color:             hsla(var(--_button-hsl), 1);
+  --_button-text-color:        hsla(var(--_button-text-hsl), 1);
+  --_button-padding-block:     var(--size--1);
+  --_button-padding-inline:    var(--size-0);
+
+  /* Optional Values */
+  --_button-border-radius: 0;    /* Fallback to 0 */
+  --_button-border-color:  var(--_button-color);             /* Fallback to 1px */
+  --_button-border-width:  var(--base-border-width, 2px);   /* Fallback to 1px */
+  --_button-border-style:  var(--base-border-style, solid); /* Fallback to solid */
+  --_button-font-weight:   var(--font-weight, 400);         /* Fallback to 400 */ 
+  --_button-font-size:     100%;
+  --_button-icon-color:    var(--_button-text-color);
 }
 
 .button {
+  /* Defining Variables */
+  --_button-font-family: var(--body-font);
+  --_button-letter-spacing: 0.1px;
+}
+
+
+.button { 
   /* Structure */
   display: inline-block;
   zoom: 1;
@@ -17,14 +50,13 @@
   -webkit-user-drag: none;
   user-select: none;
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 1rem;
   text-decoration: none;
   align-self: self-start;
   justify-self: flex-start;
-  
-  font-family: var(--button-font-family, sans-serif); /* Fallback to sans-serif */
-  font-weight: var(--button-font-weight, 400);
-  letter-spacing: var(--button-letter-spacing);
+  font-family: var(--_button-font-family, sans-serif); /* Fallback to sans-serif */
+  font-weight: var(--_button-font-weight, 400);
+  letter-spacing: var(--_button-letter-spacing);
 }
 
 .button:focus { outline: 0; }
@@ -59,6 +91,10 @@
   width: 100%;
 }
 
+.button:not([unstyled]) {
+  box-shadow: var(--focus-effect);
+}
+
 /* 
   This section contains the css rules for the button system. 
   Most of the visual configurations can be made through the variables. (Lines 13-21)
@@ -67,110 +103,110 @@
 
 .button {
   /* Required Values */
-  --button-hsl:               var(--base-hsl);
-  --button-text-hsl:          var(--base-hsl);
+  --_button-hsl:               var(--base-hsl);
+  --_button-text-hsl:          var(--base-hsl);
   
-  --button-color:             hsla(var(--button-hsl), 1);
-  --button-text-color:        hsla(var(--button-text-hsl), 1);
-  --button-padding-block:     var(--size--1);
-  --button-padding-inline:    var(--size-0);
+  --_button-color:             hsla(var(--_button-hsl), .4);
+  --_button-text-color:        hsla(var(--_button-text-hsl), 1);
+  --_button-padding-block:     var(--size-0);
+  --_button-padding-inline:    var(--size-0);
 
   /* Optional Values */
-  --button-border-radius: var(--base-border-radius, 0);    /* Fallback to 0 */
-  --button-border-color:  var(--button-color);             /* Fallback to 1px */
-  --button-border-width:  var(--base-border-width, 2px);   /* Fallback to 1px */
-  --button-border-style:  var(--base-border-style, solid); /* Fallback to solid */
-  --button-font-weight:   var(--font-weight, 400);         /* Fallback to 400 */
-  --button-font-size:     100%;
-  --button-icon-color:    var(--button-text-color);
+  --_button-border-radius: var(--base-border-radius, 0);    /* Fallback to 0 */
+  --_button-border-color:  var(--_button-color);             /* Fallback to 1px */
+  --_button-border-width:  var(--base-border-width, 1px);   /* Fallback to 1px */
+  --_button-border-style:  var(--base-border-style, solid); /* Fallback to solid */
+  --_button-font-weight:   var(--font-weight, 400);         /* Fallback to 400 */
+  --_button-font-size:     100%;
+  --_button-icon-color:    var(--_button-text-color);
 }
 
 .button[data-color="base"] { 
-  --button-hsl: var(--base-hsl); 
-  --button-text-color: var(--base-color); 
+  --_button-hsl: var(--base-hsl); 
+  --_button-text-color: var(--base-color); 
 }
 
 .button[data-color="primary"] { 
-  --button-hsl: var(--primary-hsl); 
-  --button-text-color: var(--primary-color); 
+  --_button-hsl: var(--primary-hsl); 
+  --_button-text-color: var(--primary-color); 
 }
 
 .button[data-color="secondary"] { 
-  --button-hsl: var(--secondary-hsl); 
-  --button-text-color: var(--secondary-color); 
+  --_button-hsl: var(--secondary-hsl); 
+  --_button-text-color: var(--secondary-color); 
 }
 
 .button[data-color="accent"] { 
-  --button-hsl: var(--accent-hsl);
-  --button-text-color: var(--accent-color);
+  --_button-hsl: var(--accent-hsl);
+  --_button-text-color: var(--accent-color);
 }
 
 .button[data-color="white"] { 
-  --button-hsl: var(--white-hsl);
-  --button-text-color: var(--white-color);
+  --_button-hsl: var(--white-hsl);
+  --_button-text-color: var(--white-color);
 }
 
 .button[data-color="success"] { 
-  --button-hsl: var(--green-hsl); 
-  --button-text-color: var(--green-color);
+  --_button-hsl: var(--green-hsl); 
+  --_button-text-color: var(--green-color);
 }
 
 .button[data-color="cancel"],
 .button[data-color="fail"] { 
-  --button-hsl: var(--red-hsl);
-  --button-text-color: var(--red-color);
+  --_button-hsl: var(--red-hsl);
+  --_button-text-color: var(--red-color);
 }
 
 .button[data-color="warning"],
 .button[color="warning"] { 
-  --button-hsl: var(--yellow-hsl);
-  --button-text-color: var(--yellow-color);
+  --_button-hsl: var(--yellow-hsl);
+  --_button-text-color: var(--yellow-color);
 }
 
 .button[data-size="s"],
 .button[size="s"] {
-  --button-padding-block: var(--size--2);
-  --button-padding-inline: var(--size--1);
-  --button-font-size: 75%; 
+  --_button-padding-block: var(--size--2);
+  --_button-padding-inline: var(--size--1);
+  --_button-font-size: 75%; 
 }
 
 .button[data-size="l"],
 .button[size="l"] {
-  --button-padding-block: var(--size-2);
-  --button-padding-inline: var(--size-3);
-  --button-font-size: 120%;
+  --_button-padding-block: var(--size-2);
+  --_button-padding-inline: var(--size-3);
+  --_button-font-size: 120%;
 }
 
 .button[data-size="xl"],
 .button[size="xl"] {
-  --button-padding-block: var(--size-0);
-  --button-padding-inline: var(--size-2);
-  --button-font-size: 150%;
+  --_button-padding-block: var(--size-0);
+  --_button-padding-inline: var(--size-2);
+  --_button-font-size: 150%;
 }
 
 .button[data-size="full-width"] { width: 100%; }
 
 .button {
-  color: var(--button-text-color);
-  background-color: transparent; /* This might be an issue */
+  color: var(--_button-text-color);
+  background-color: transparent; /*This might be an issue*/
 
-  padding: var(--button-padding-block) var(--button-padding-inline);
+  padding: var(--_button-padding-block) var(--_button-padding-inline);
   
-  border-radius: var(--button-border-radius, 0);
-  border-width: var(--button-border-width, 1px);
-  border-style: var(--button-border-style, solid);
-  border-color: var(--button-border-color);
+  border-radius: var(--_button-border-radius, 0);
+  border-width: var(--_button-border-width, 1px);
+  border-style: var(--_button-border-style, solid);
+  border-color: var(--_button-border-color);
   
-  font-family: var(--button-font-family);
-  font-weight: var(--button-font-weight, 400);
-  font-size: var(--button-font-size, 100%);
+  font-family: var(--_button-font-family);
+  font-weight: var(--_button-font-weight, 400);
+  font-size: var(--_button-font-size, 100%);
 }
 
-.button:hover { background-image: linear-gradient(hsla(var(--button-hsl), 0.05), hsla(var(--button-hsl), 0.05)); }
+.button:hover { background-image: linear-gradient(hsla(var(--_button-hsl), 0.05), hsla(var(--_button-hsl), 0.05)); }
 
 .button:active {
-  background-image: linear-gradient(hsla(var(--button-hsl), 0.15), hsla(var(--button-hsl), 0.15));
-  border-color: hsla(var(--button-color), 1);
+  background-image: linear-gradient(hsla(var(--_button-hsl), 0.15), hsla(var(--_button-hsl), 0.15));
+  border-color: hsla(var(--_button-color), 1);
 }
   
 .button:focus { box-shadow: var(--focus-effect); }
@@ -178,10 +214,10 @@
 .button[data-visual="primary"],
 .button[visual="primary"] {
     color: white;
-    border-width: var(--button-border-width, 0);
-    border-style: var(--button-border-style, solid);
-    border-color: hsla(var(--button-hsl), 1);
-    background-color: hsla(var(--button-hsl), 1);
+    border-width: var(--_button-border-width, 0);
+    border-style: var(--_button-border-style, solid);
+    border-color: hsla(var(--_button-hsl), 1);
+    background-color: hsla(var(--_button-hsl), 1);
 }
 
 .button[data-visual="primary"]:hover,
@@ -192,22 +228,22 @@
 .button[data-visual="secondary"],
 .button[visual="secondary"] {
   background-color: transparent;
-  color: var(--button-text-color);
-  border-width: var(--button-border-width, 1px);
-  border-style: var(--button-border-style, solid);
-  border-color: hsla(var(--button-hsl), 1);
+  color: var(--_button-text-color);
+  border-width: var(--_button-border-width, 1px);
+  border-style: var(--_button-border-style, solid);
+  border-color: hsla(var(--_button-hsl), 1);
 }
 
 .button[data-visual="secondary"]:hover,
 .button[data-visual="secondary"]:focus,
 .button[visual="secondary"]:hover,
-.button[visual="secondary"]:focus { background-image: linear-gradient(hsla(var(--button-hsl), 0.1), hsla(var(--button-hsl), 0.1)); }
+.button[visual="secondary"]:focus { background-image: linear-gradient(hsla(var(--_button-hsl), 0.1), hsla(var(--_button-hsl), 0.1)); }
 
 .button[data-visual="unstyled"],
 .button[visual="unstyled"] { 
-  color: hsla(var(--button-hsl), 1); 
-  border-width: var(--button-border-width, 0);
-  border-style: var(--button-border-style, solid);
+  color: hsla(var(--_button-hsl), 1); 
+  border-width: var(--_button-border-width, 0);
+  border-style: var(--_button-border-style, solid);
   border-color: transparent;
 }
 
@@ -217,11 +253,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* this tweaks the line-height of buttons with icons the button height consistent with the other buttons  */
-  line-height: 0.686;
+  
+  &:before,
+  &:after { line-height: 0.686; /* this tweaks the line-height of buttons with icons the button height consistent with the other buttons  */ }
 }
-
-
 
 .button[data-icon-before]:before { content: attr(icon-before); }
 .button[data-icon-after]:after { content: attr(icon-after); }
@@ -232,14 +267,14 @@
   font-weight: normal;
   font-style: normal;
   font-size: 24px;  /* Preferred icon size */
-  font-size: calc(var(--button-font-size) * 1.5);
+  font-size: calc(var(--_button-font-size) * 1.5);
   display: inline-block;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  color: var(--button-icon-color); 
+  color: var(--_button-icon-color); 
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -268,11 +303,12 @@
 .button[data-icon-before]:empty,
 .button[icon-before]:empty,
 .button[data-icon-after]:empty,
-.button[icon-after]:empty { padding: var(--button-padding-v) var(--button-padding-v); }
+.button[icon-after]:empty { padding: var(--_button-padding-v) var(--_button-padding-v); }
 
 .button[data-visual="primary"][data-icon-before]:before,
 .button[visual="primary"][icon-before]:before,
 .button[data-visual="primary"][data-icon-after]:after,
 .button[visual="primary"][icon-after]:after { 
-  --button-icon-color: var(--white-color);   
+  --_button-icon-color: var(--white-color);   
 }
+

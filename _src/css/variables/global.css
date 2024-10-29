@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
 /* Global variables */
 :root {
@@ -23,7 +23,13 @@
 
 /* Typography Variables */
 :root {
-  --body-font: "Roboto Flex", sans-serif;
+  --body-font: "Red Hat Text", sans-serif;
 }
 
 
+:root {
+  --box-shadow: 0px 0px 1.8px hsla(var(--primary-hsl), .1), 
+                  0px 0px 5px hsla(var(--primary-hsl), .126),
+                  0px 0px 12.1px hsla(var(--primary-hsl), .075),
+                  0px 0px 40px hsla(var(--primary-hsl), .047);
+}

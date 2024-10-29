@@ -12,11 +12,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: var(--stack-space);
   
 }
 
 .stack-l > * { margin-block: 0; } 
-.stack-l > * + * { margin-block-start: var(--stack-space); }
+/* .stack-l > * + * { margin-block-start: var(--stack-space); } */
 
 .stack-l[data-space="xs"]  { --stack-space: var(--space-xs); }
 .stack-l[data-space="s"]   { --stack-space: var(--space-s); }

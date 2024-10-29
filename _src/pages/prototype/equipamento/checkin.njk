@@ -1,5 +1,5 @@
 ---
-layout: ds/prototype-detail.njk
+layout: ds/prototype-checkin.njk
 title: Check-in
 header_title: PL-12800
 icon: offline_bolt
@@ -11,34 +11,72 @@ tags:
   Montei ele num HTML separado para conversarmos.
 #}
 
-    {% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
-
     <section class="base-section" data-size="s">
       <details class="collapse | stack-l">
         <summary data-icon-after>Perigo</summary>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Acúmulo de materiais / obstáculo<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Equipamento vandalizado<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Falta de sinalização adequada<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Iluminação inadequada<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Intempéries<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Interferência de pessoas<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Obra no local<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Ruído excessivo<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Piso escorregadio<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Piso irregular<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Materiais inflamáveis<input type="checkbox"></label>
-        <label class="checkbox-button button" data-size="m" data-full-width="true">Excesso de poeira<input type="checkbox"></label>
+        <div class="field checkbox-group">
+          <label for="checkbox-danger1" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger1" name="checkbox-danger" value="accumulation">
+            Acúmulo de materiais / obstáculo
+          </label>
+          <label for="checkbox-danger2" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger2" name="checkbox-danger" value="vandalism">
+            Equipamento vandalizado
+          </label>
+          <label for="checkbox-danger3" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger3" name="checkbox-danger" value="lack-signage">
+            Falta de sinalização adequada
+          </label>
+          <label for="checkbox-danger4" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger4" name="checkbox-danger" value="poor-lighting">
+            Iluminação inadequada
+          </label>
+          <label for="checkbox-danger5" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger5" name="checkbox-danger" value="weather">
+            Intempéries
+          </label>
+          <label for="checkbox-danger6" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger6" name="checkbox-danger" value="interference">
+            Interferência de pessoas
+          </label>
+          <label for="checkbox-danger7" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger7" name="checkbox-danger" value="construction">
+            Obra no local
+          </label>
+          <label for="checkbox-danger8" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger8" name="checkbox-danger" value="noise">
+            Ruído excessivo
+          </label>
+          <label for="checkbox-danger9" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger9" name="checkbox-danger" value="slippery-floor">
+            Piso escorregadio
+          </label>
+          <label for="checkbox-danger10" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger10" name="checkbox-danger" value="uneven-floor">
+            Piso irregular
+          </label>
+          <label for="checkbox-danger11" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger11" name="checkbox-danger" value="flammable-materials">
+            Materiais inflamáveis
+          </label>
+          <label for="checkbox-danger12" class="button" data-icon>
+            <input type="checkbox" id="checkbox-danger12" name="checkbox-danger" value="dust">
+            Excesso de poeira
+          </label>
       </details>
     </section>
     
     <section class="base-section" data-size="s">
       <details class="collapse | stack-l">
         <summary data-icon-after>Desenergização</summary>
-        <select name="" id="">
-          <option value="">Disjuntor do cliente</option>
-          <option value="">Disjuntor do quadro de comando</option>
-          <option value="">Não foi necessário o bloqueio</option>
-        </select>
+        <div class="field select">
+          <label for="select">Choose an option:</label>
+          <select id="select" name="select">
+            <option value="">Disjuntor do cliente</option>
+            <option value="">Disjuntor do quadro de comando</option>
+            <option value="">Não foi necessário o bloqueio</option>
+          </select>
+        </div>
         <p>Localização disjuntor:</p>
         <p>Arquivo:Não disponível</p>
         <p>Tensão do quadro de comando:Extra baixa tensão</p>
@@ -49,18 +87,55 @@ tags:
     <section class="base-section" data-size="s">
       <details class="collapse | stack-l">
         <summary data-icon-after>EPIs Necessários</summary>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Botina de segurança<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Capacete com jugular<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Cinto seg. paraquedista<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Creme luvex<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Luvas de cobertura<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Luvas com resis. a corte<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Luvas de proteção nitrílica<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Luvas isolante<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Máscara<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Óculos de prot. incolor<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Protetor auricular<input type="checkbox"></label>
-          <label class="checkbox-button button" data-size="m" data-full-width="true">Trava queda com dois talabartes<input type="checkbox"></label>
+        <div class="field checkbox-group">
+          <label for="checkbox1" class="button" data-icon>
+            <input type="checkbox" id="checkbox1" name="checkbox-group" value="option1">
+            Botina de segurança
+          </label>
+          <label for="checkbox2" class="button" data-icon>
+            <input type="checkbox" id="checkbox2" name="checkbox-group" value="option2">
+            Capacete com jugular
+          </label>
+          <label for="checkbox3" class="button" data-icon>
+            <input type="checkbox" id="checkbox3" name="checkbox-group" value="option3">
+            Cinto seg. paraquedista
+          </label>
+          <label for="checkbox4" class="button" data-icon>
+            <input type="checkbox" id="checkbox4" name="checkbox-group" value="option4">
+            Creme luvex
+          </label>
+          <label for="checkbox5" class="button" data-icon>
+            <input type="checkbox" id="checkbox5" name="checkbox-group" value="option5">
+            Luvas de cobertura
+          </label>
+          <label for="checkbox6" class="button" data-icon>
+            <input type="checkbox" id="checkbox6" name="checkbox-group" value="option6">
+            Luvas com resis. a corte
+          </label>
+          <label for="checkbox7" class="button" data-icon>
+            <input type="checkbox" id="checkbox7" name="checkbox-group" value="option7">
+            Luvas de proteção nitrílica
+          </label>
+          <label for="checkbox8" class="button" data-icon>
+            <input type="checkbox" id="checkbox8" name="checkbox-group" value="option8">
+            Luvas isolante
+          </label>
+          <label for="checkbox9" class="button" data-icon>
+            <input type="checkbox" id="checkbox9" name="checkbox-group" value="option9">
+            Máscara
+          </label>
+          <label for="checkbox10" class="button" data-icon>
+            <input type="checkbox" id="checkbox10" name="checkbox-group" value="option10">
+            Óculos de prot. incolor
+          </label>
+          <label for="checkbox11" class="button" data-icon>
+            <input type="checkbox" id="checkbox11" name="checkbox-group" value="option11">
+            Protetor auricular
+          </label>
+          <label for="checkbox12" class="button" data-icon>
+            <input type="checkbox" id="checkbox12" name="checkbox-group" value="option12">
+            Trava queda com dois talabartes
+          </label>
       </details>
     </section>
 
@@ -68,56 +143,47 @@ tags:
       <details class="collapse | stack-l">
         <summary data-icon-after>Procedimentos de Manutenção</summary>
 
-        <label for="">Acesso ao topo do carro</label>
-        <select name="" id="">
-          <option value="">-----</option>
-          <option value="">Sim</option>
-          <option value="">Não foi necessário</option>
-          <option value="">Não foi possível realizar</option>
-        </select>
-        <label for="">Acesso ao topo do poço</label>
-        <select name="" id="">
-          <option value="">-----</option>
-          <option value="">Sim</option>
-          <option value="">Não foi necessário</option>
-          <option value="">Não foi possível realizar</option>
-        </select>
+        <div class="stack-l">
+          <div class="field select">
+            <label for="select-topo-carro">Acesso ao topo do carro</label>
+            <select id="select-topo-carro" name="select-topo-carro">
+              <option value="">-----</option>
+              <option value="sim">Sim</option>
+              <option value="nao-necessario">Não foi necessário</option>
+              <option value="nao-possivel">Não foi possível realizar</option>
+            </select>
+          </div>
 
-        <label for="">Acesso à casa de máquinas</label>
-        <select name="" id="">
-          <option value="">-----</option>
-          <option value="">Sim</option>
-          <option value="">Não foi necessário</option>
-          <option value="">Não foi possível realizar</option>
-        </select>
+          <div class="field select">
+            <label for="select-topo-poco">Acesso ao topo do poço</label>
+            <select id="select-topo-poco" name="select-topo-poco">
+              <option value="">-----</option>
+              <option value="sim">Sim</option>
+              <option value="nao-necessario">Não foi necessário</option>
+              <option value="nao-possivel">Não foi possível realizar</option>
+            </select>
+          </div>
 
-        <label for="">Resgate de passageiros presos</label>
-        <select name="" id="">
-          <option value="">-----</option>
-          <option value="">Sim</option>
-          <option value="">Não foi necessário</option>
-          <option value="">Não foi possível realizar</option>
-        </select>
-      </details>
-    </section>
+          <div class="field select">
+            <label for="select-casa-maquinas">Acesso à casa de máquinas</label>
+            <select id="select-casa-maquinas" name="select-casa-maquinas">
+              <option value="">-----</option>
+              <option value="sim">Sim</option>
+              <option value="nao-necessario">Não foi necessário</option>
+              <option value="nao-possivel">Não foi possível realizar</option>
+            </select>
+          </div>
 
-    <section class="base-section" data-size="s">
-      <details class="collapse | stack-l">
-        <summary data-icon-after>Fotos</summary>
-        <div class="checkin-pictures">
-          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
-          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
-          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
-          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+          <div class="field select">
+            <label for="select-resgate-passageiros">Resgate de passageiros presos</label>
+            <select id="select-resgate-passageiros" name="select-resgate-passageiros">
+              <option value="">-----</option>
+              <option value="sim">Sim</option>
+              <option value="nao-necessario">Não foi necessário</option>
+              <option value="nao-possivel">Não foi possível realizar</option>
+            </select>
+          </div>
         </div>
-        
       </details>
     </section>
 
-    <section class="base-section | stack-l" data-size="s" data-border="false">
-      <p>Relato</p>
-      {% include "patterns/2-components/textarea-full/textarea-full.njk" %}
-      <button class="button" data-size="l" data-full-width="true" data-icon="mic">Gravar Audio</button>
-      <button class="button" data-size="l" data-full-width="true">Atualizar</button>
-      <a href="/pages/prototype/equipamento/" class="button" data-size="l" data-full-width="true">Check-out</a>
-    </section>

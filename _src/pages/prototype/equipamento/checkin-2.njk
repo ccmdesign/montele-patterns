@@ -1,0 +1,22 @@
+---
+layout: ds/prototype-checkin.njk
+title: Check-in
+header_title: PL-12800
+icon: offline_bolt
+tags:
+  - prototype
+---
+{# 
+  Fiquei na dúvida de como implementar o fluxo do check-in.
+  Montei ele num HTML separado para conversarmos.
+#}
+
+    <section class="base-section" data-size="s">
+      <h2>Fotos</h2>
+      <div class="checkin-pictures">
+          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+          {% include "patterns/3-modules/picture-slot/picture-slot.njk" %}
+        </div>
+    </section>

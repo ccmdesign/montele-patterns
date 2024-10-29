@@ -5,12 +5,6 @@
   border-radius: 0;
 }
 
-.button.icon[aria-selected="false"] { opacity: .5; }
-.button.icon[aria-selected="true"] { 
-  opacity: 1; 
-  background: var(--base-tint-10);
-}
-
 .mega-button.button {
   background-color: var(--accent-color);
   padding: var(--space-xl);

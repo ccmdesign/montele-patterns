@@ -9,6 +9,9 @@
   /* Colors */
   background-color: var(--base-color-10);
   color: var(--base-color);
+
+  /* Effects */
+  box-shadow: var(--box-shadow);
 }
 
 .announcement-bar[data-color="primary"] {

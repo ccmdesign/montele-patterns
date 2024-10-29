@@ -9,6 +9,6 @@ https://every-layout.dev/layouts/center/
 
 .center-l {
   box-sizing: content-box;
-  margin-inline: auto;
+  margin-inline: var(--space-s);
   max-inline-size: var(--measure);
 }

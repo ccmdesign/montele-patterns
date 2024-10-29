@@ -1,0 +1,14 @@
+.bottom-tabs {
+  background: linear-gradient(var(--black-color-80), var(--black-color-90));
+  box-shadow: 0 0 16px var(--black-color-20);
+}
+
+.bottom-tabs__button {
+  color: var(--white-color);
+}
+
+.bottom-tabs__button[aria-selected="false"] { opacity: .5; }
+.bottom-tabs__button[aria-selected="true"] { 
+  opacity: 1; 
+  background-color: var(--black-tint-70) !important;
+}
