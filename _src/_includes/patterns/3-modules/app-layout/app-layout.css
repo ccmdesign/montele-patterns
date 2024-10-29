@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto auto;
-  height: 100svh;
-  max-height: 100svh;
+  height: 100dvh;
+  max-height: 100dvh;
   overflow-y: hidden;
   grid-template-areas: "header" "above-main" "main" "above-footer" "footer";
 }
