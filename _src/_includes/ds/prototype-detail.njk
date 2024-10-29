@@ -33,10 +33,10 @@ icon:
   </div>
 
   <div class="bottom-tabs app-layout__footer | fixed-bar">
-    <a class="bottom-tabs__button fixed-bar__stretch | button icon" unstyled href="/pages/prototype/equipamento/"           title="Home"             aria-selected="{% if '/pages/prototype/equipamento/' in page.url %}true{% else %}false{% endif %}"  unstyled>location_on</a>
-    <a class="bottom-tabs__button fixed-bar__stretch | button icon" unstyled href="/pages/prototype/equipamento/manutencao" title="Manutenção"       aria-selected="{% if '/pages/prototype/manutencao/' in page.url %}true{% else %}false{% endif %}" unstyled>construction</a>
-    <a class="bottom-tabs__button fixed-bar__stretch | button icon" unstyled href="/pages/prototype/equipamento/tech"       title="Tech"             aria-selected="{% if '/pages/prototype/tech/' in page.url %}true{% else %}false{% endif %}" unstyled>stacks</a>
-    <a class="bottom-tabs__button fixed-bar__stretch | button icon" unstyled href="/pages/prototype/equipamento/mensagens"  title="Mensagens & Chat" aria-selected="{% if '/pages/prototype/mensagens/' in page.url %}true{% else %}false{% endif %}" unstyled>chat</a>
+    <a class="bottom-tabs__button fixed-bar__stretch | button icon" unstyled href="/pages/prototype/equipamento/"           title="Home"             aria-selected="{% if page.url == '/pages/prototype/equipamento/' %}true{% else %}false{% endif %}"  unstyled>location_on</a>
+    <a class="bottom-tabs__button fixed-bar__stretch | button icon" unstyled href="/pages/prototype/equipamento/manutencao" title="Manutenção"       aria-selected="{% if page.url == '/pages/prototype/manutencao/' %}true{% else %}false{% endif %}" unstyled>construction</a>
+    <a class="bottom-tabs__button fixed-bar__stretch | button icon" unstyled href="/pages/prototype/equipamento/tech"       title="Tech"             aria-selected="{% if page.url == '/pages/prototype/tech/' %}true{% else %}false{% endif %}" unstyled>stacks</a>
+    <a class="bottom-tabs__button fixed-bar__stretch | button icon" unstyled href="/pages/prototype/equipamento/mensagens"  title="Mensagens & Chat" aria-selected="{% if page.url == '/pages/prototype/mensagens/' %}true{% else %}false{% endif %}" unstyled>chat</a>
   </div>
 </main>
 

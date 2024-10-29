@@ -6,45 +6,42 @@ icon: offline_bolt
 tags:
   - prototype
 ---
-{% include "patterns/3-modules/announcement-bar/announcement-bar.njk" %}
-
 
 {# Vamos adicionar um announcement e um summary dos items da lista. Provavelmente 3 colunas/links pro scroll com numeros: X Corretivas, X Preventivas, etc.</p> #}
 {# Colocar uma corretiva, e 1 preventiva agendada, e 1 preventiva pendente </p> #}
 
 
-{% include "patterns/3-modules/summary-dash/summary-dash.njk" %}
+{# {% include "patterns/3-modules/summary-dash/summary-dash.njk" %} #}
 
 <section class="work-section base-section | center-l">
   <ul class="ticket-list stack-l" role="list" data-space="m">
     {# <h3 class="subject-title">Chamados Corretivos</h3> #}
-    <li>
+    {# <li>
       {% set ticket = tickets.normal %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
-    </li>
+    </li> #}
     <li>
       {% set ticket = tickets.passageiro_preso %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
     </li>
-    <li>
+    {# <li>
       {% set ticket = tickets.atrasado %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
     </li>
     <li>
       {% set ticket = tickets.aberto %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
-    </li>
+    </li> #}
   </ul>
   <ul class="ticket-list stack-l" role="list" data-space="xl">
-    <h2 class="list-title">Chamados Preventivos</h2>
-    <li>
+    {# <li>
       {% set ticket = tickets.preventiva_agendada %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
     </li>
     <li>
       {% set ticket = tickets.preventiva_atrasada %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
-    </li>
+    </li> #}
     <li>
       {% set ticket = tickets.preventiva_pendente %}
       {% include "patterns/3-modules/ticket/ticket.njk" %}
